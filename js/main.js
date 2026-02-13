@@ -51,24 +51,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Fade-in elements
-    const fadeElements = document.querySelectorAll('.major-card, .project-card, .toolkit-category, .edu-item, .visual-item, .value-item');
-    fadeElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-        observer.observe(el);
+    // Staggered Reveal Animation
+    const revealElements = document.querySelectorAll('.major-card, .project-card, .cert-card, .toolkit-category, .edu-item, .visual-item, .value-item');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add staggered delay based on index (if accessible) or just pure delay
+                entry.target.classList.add('active');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    revealElements.forEach((el, index) => {
+        el.classList.add('reveal');
+        // Calculate delay based on position in grid (modulo 3 for 3-column grids)
+        const delay = (index % 3) * 200;
+        el.style.transitionDelay = `${delay}ms`;
+        revealObserver.observe(el);
     });
 
-    // Add visible class styling
-    const style = document.createElement('style');
-    style.innerHTML = `
-        .visible {
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-        }
-    `;
-    document.head.appendChild(style);
+
 
     // Hero Parallax / Mouse Effect
     const hero = document.querySelector('.hero');
@@ -76,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hero.addEventListener('mousemove', (e) => {
             const x = e.clientX / window.innerWidth;
             const y = e.clientY / window.innerHeight;
-            
+
             hero.style.backgroundPosition = `${x * 20}px ${y * 20}px`;
         });
     }
