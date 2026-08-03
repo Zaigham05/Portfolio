@@ -19,19 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileMenuBtn && navLinks) {
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('mobile-open');
-            if (navLinks.classList.contains('mobile-open')) {
-                navLinks.style.display = 'flex';
-                navLinks.style.flexDirection = 'column';
-                navLinks.style.position = 'absolute';
-                navLinks.style.top = '100%';
-                navLinks.style.left = '0';
-                navLinks.style.width = '100%';
-                navLinks.style.background = 'var(--glass-bg)';
-                navLinks.style.padding = '1.5rem';
-                navLinks.style.borderBottom = '1px solid var(--glass-border)';
-            } else {
-                navLinks.style.display = '';
-            }
         });
     }
 
@@ -372,6 +359,65 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && resumeModal && resumeModal.classList.contains('active')) {
             closeResume();
+        }
+    });
+
+    // --- 12. Back to Top Floating Button Logic ---
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // --- 13. Executive One-Pager Summary Modal Logic ---
+    const execModal = document.getElementById('exec-summary-modal');
+    const openExecBtn = document.getElementById('open-exec-summary-btn');
+    const closeExecBtn = document.getElementById('close-exec-summary-btn');
+
+    function openExecSummary() {
+        if (!execModal) return;
+        execModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeExecSummary() {
+        if (!execModal) return;
+        execModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (openExecBtn) {
+        openExecBtn.addEventListener('click', openExecSummary);
+    }
+
+    if (closeExecBtn) {
+        closeExecBtn.addEventListener('click', closeExecSummary);
+    }
+
+    if (execModal) {
+        execModal.addEventListener('click', (e) => {
+            if (e.target === execModal) {
+                closeExecSummary();
+            }
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && execModal && execModal.classList.contains('active')) {
+            closeExecSummary();
         }
     });
 });
