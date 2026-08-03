@@ -414,4 +414,178 @@ document.addEventListener('DOMContentLoaded', () => {
             closeExecSummary();
         }
     });
+
+    // --- 14. Light / Dark Mode Toggle Handler ---
+    const modeToggleBtn = document.getElementById('mode-toggle-btn');
+    if (modeToggleBtn) {
+        modeToggleBtn.addEventListener('click', () => {
+            const currentMode = document.documentElement.getAttribute('data-mode') || 'dark';
+            const newMode = currentMode === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-mode', newMode);
+        });
+    }
+
+    // --- 15. FAQ Accordion Handler ---
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+            question.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+                faqItems.forEach(i => i.classList.remove('open'));
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            });
+        }
+    });
+
+    // --- 16. Case Study Modal Popup Logic ---
+    const csModal = document.getElementById('case-study-modal');
+    const closeCsBtn = document.getElementById('close-cs-modal-btn');
+    const csModalTitle = document.getElementById('cs-modal-title');
+    const csModalBody = document.getElementById('cs-modal-body');
+    const csButtons = document.querySelectorAll('.case-study-btn');
+
+    const caseStudiesData = {
+        "1": {
+            title: "Production & OEE Performance Dashboard",
+            content: `
+                <div class="resume-paper">
+                    <h3>Executive Case Study Overview</h3>
+                    <p>Designed and deployed an interactive Power BI & SQL reporting engine for manufacturing floor operations at Combined Fabrics Ltd.</p>
+                    <h4>Problem Statement</h4>
+                    <p>Production managers manually prepared paper logbooks every day, causing a 24-hour reporting lag and hidden operator downtime on sewing lines.</p>
+                    <h4>Technical Solution</h4>
+                    <p>Connected Power BI live to ERP database SQL streams and INA Hanger Line sensors. Developed DAX measures for real-time OEE, Line Balance %, and Downtime categorization.</p>
+                    <h4>Business Impact Delivered</h4>
+                    <ul class="exp-bullets">
+                        <li><strong>80% Reduced Reporting Lag:</strong> Instant real-time line visibility for floor managers.</li>
+                        <li><strong>5+ Hours Saved Daily:</strong> Automated manual compilation across all manufacturing units.</li>
+                        <li><strong>100% Floor Visibility:</strong> Live tracking of target vs actual output per operator.</li>
+                    </ul>
+                </div>
+            `
+        },
+        "2": {
+            title: "Cut-to-Pack Costing & CPP Analysis Dashboard",
+            content: `
+                <div class="resume-paper">
+                    <h3>Executive Case Study Overview</h3>
+                    <p>Built SAM-validated Cut-to-Pack Costing Engine in Excel & Power BI for tentative cost sheets and buyer submissions.</p>
+                    <h4>Problem Statement</h4>
+                    <p>Inaccurate labor cost estimation created budget variance and endangered profit margins during bulk garment execution.</p>
+                    <h4>Technical Solution</h4>
+                    <p>Integrated SAM rates, operation bulletins (OBs), direct/indirect labor ratios, and overhead allowances into dynamic Excel VBA and Power BI cost models.</p>
+                    <h4>Business Impact Delivered</h4>
+                    <ul class="exp-bullets">
+                        <li><strong>60% Reduced CPP Variance:</strong> Protected buyer submission profit margins.</li>
+                        <li><strong>Instant Cost Sheet Generation:</strong> Accelerated buyer quote turnaround.</li>
+                    </ul>
+                </div>
+            `
+        },
+        "3": {
+            title: "RFID & INA Hanger Line Real-Time Dashboard",
+            content: `
+                <div class="resume-paper">
+                    <h3>Executive Case Study Overview</h3>
+                    <p>Streamed real-time garment hanger movement sensors into Power BI floor bottleneck alerts.</p>
+                    <h4>Problem Statement</h4>
+                    <p>Paper logbooks failed to catch line balance bottlenecks on active sewing lines until after shifts ended.</p>
+                    <h4>Technical Solution</h4>
+                    <p>Structured live SQL data feeds from RFID readers on INA Hanger Systems into automated DAX alert dashboards.</p>
+                    <h4>Business Impact Delivered</h4>
+                    <ul class="exp-bullets">
+                        <li><strong>100% Shop Floor Traceability:</strong> Real-time garment tracking from cutting to packing.</li>
+                        <li><strong>80% Faster Bottleneck Resolution:</strong> Instant floor manager alerts.</li>
+                    </ul>
+                </div>
+            `
+        },
+        "4": {
+            title: "Production Planning & Capacity Allocation Model",
+            content: `
+                <div class="resume-paper">
+                    <h3>Executive Case Study Overview</h3>
+                    <p>Dynamic capacity allocation and attendance allowance forecasting model in Excel VBA & Power BI.</p>
+                    <h4>Problem Statement</h4>
+                    <p>Unplanned operator absenteeism caused target shortfalls and severe line balance disruptions.</p>
+                    <h4>Technical Solution</h4>
+                    <p>Created predictive attendance allowance calculations and automated line re-balancing models.</p>
+                    <h4>Business Impact Delivered</h4>
+                    <ul class="exp-bullets">
+                        <li><strong>Stabilized Target Output:</strong> Optimized line presence and daily output goals.</li>
+                    </ul>
+                </div>
+            `
+        },
+        "5": {
+            title: "Quality & Floor Deficit Reduction Engine",
+            content: `
+                <div class="resume-paper">
+                    <h3>Executive Case Study Overview</h3>
+                    <p>Executive risk analysis dashboard for floor deficits, scrap rates, and root cause quality matrices.</p>
+                    <h4>Problem Statement</h4>
+                    <p>Unresolved floor deficits created budget overruns and delayed export shipment schedules.</p>
+                    <h4>Technical Solution</h4>
+                    <p>Built DAX quality metric models and led weekly executive decision support briefings.</p>
+                    <h4>Business Impact Delivered</h4>
+                    <ul class="exp-bullets">
+                        <li><strong>Reduced Operator Deficits:</strong> Improved shipment on-time completion rates.</li>
+                    </ul>
+                </div>
+            `
+        },
+        "6": {
+            title: "Excel Voucher & Wage Validation Automation",
+            content: `
+                <div class="resume-paper">
+                    <h3>Executive Case Study Overview</h3>
+                    <p>Automated piece-rate voucher auditing workflow and operation code standardization engine.</p>
+                    <h4>Problem Statement</h4>
+                    <p>Manual paper piece-rate vouchers required 3+ days of manual auditing, leading to payment errors and worker friction.</p>
+                    <h4>Technical Solution</h4>
+                    <p>Standardized 3,400+ operation codes and developed Excel VBA validation routines connected to SQL databases.</p>
+                    <h4>Business Impact Delivered</h4>
+                    <ul class="exp-bullets">
+                        <li><strong>0% Audit Discrepancy Rate:</strong> Completely eliminated payment errors.</li>
+                        <li><strong>15 Hours Saved Weekly:</strong> Automated payroll processing.</li>
+                    </ul>
+                </div>
+            `
+        }
+    };
+
+    csButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const id = btn.getAttribute('data-cs');
+            if (caseStudiesData[id] && csModal) {
+                csModalTitle.textContent = caseStudiesData[id].title;
+                csModalBody.innerHTML = caseStudiesData[id].content;
+                csModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    if (closeCsBtn) {
+        closeCsBtn.addEventListener('click', () => {
+            if (csModal) {
+                csModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+
+    if (csModal) {
+        csModal.addEventListener('click', (e) => {
+            if (e.target === csModal) {
+                if (csModal) {
+                    csModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            }
+        });
+    }
 });

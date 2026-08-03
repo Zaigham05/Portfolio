@@ -1,25 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-mode="dark" data-theme="cyan">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Hafiz Muhammad Zaigham Latif - Senior Officer IE & Data Analytics (6+ Years Experience). Specializing in Power BI, Power Platform, SAM validation, cut-to-pack costing, and digital factory automation.">
+        content="Hafiz Muhammad Zaigham Latif - Manufacturing Intelligence Specialist, Industrial Engineer & Business Intelligence Developer with 6+ years experience in Power BI, SQL, Excel, ERP & Process Optimization.">
     <!-- OpenGraph & Social Sharing Meta Tags -->
-    <meta property="og:title" content="Hafiz Muhammad Zaigham Latif | Senior IE & Data Analytics Specialist">
-    <meta property="og:description" content="6+ Years Experience in Power BI, Power Platform, Cut-to-Pack Costing, SAM Validation & Digital Factory Automation.">
+    <meta property="og:title" content="Hafiz Muhammad Zaigham Latif | Manufacturing Intelligence Specialist">
+    <meta property="og:description" content="Transforming manufacturing data into strategic business decisions through Power BI, SQL, Excel, ERP & Process Optimization.">
     <meta property="og:image" content="assets/profile.jpg">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Hafiz Muhammad Zaigham Latif | IE & Data Analytics Specialist">
-    <meta name="twitter:description" content="6+ Years Experience in Power BI, Power Platform, Cut-to-Pack Costing, SAM Validation & Digital Factory Automation.">
-    <title>Hafiz Muhammad Zaigham Latif | Industrial Engineering & Data Analytics Professional</title>
+    <meta name="twitter:title" content="Hafiz Muhammad Zaigham Latif | Manufacturing Intelligence Specialist">
+    <meta name="twitter:description" content="Transforming manufacturing data into strategic business decisions through Power BI, SQL, Excel, ERP & Process Optimization.">
+    <title>Hafiz Muhammad Zaigham Latif | Manufacturing Intelligence Specialist</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Schema.org Person JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hafiz Muhammad Zaigham Latif",
+      "jobTitle": "Manufacturing Intelligence Specialist | Industrial Engineer | Business Intelligence Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Combined Fabrics Limited"
+      },
+      "url": "https://hafizzaigham.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/muhammad-zaigham-latif-4540aa17b/"
+      ],
+      "knowsAbout": ["Industrial Engineering", "Business Intelligence", "Manufacturing Analytics", "Power BI", "Excel Automation", "Textile Manufacturing", "SAM Validation", "ERP Systems", "RFID"]
+    }
+    </script>
 </head>
 
 <body>
@@ -27,20 +46,28 @@
     <div class="cursor-glow" id="cursor-glow"></div>
 
     <!-- Header Navigation -->
-    <header class="header">
+    <header class="header" id="header">
         <nav class="nav container">
             <a href="#home" class="logo">Hafiz M. <span class="accent">Zaigham</span><span class="logo-dot"></span></a>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#majors">Pillars</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#toolkit">Toolkit</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#impact">Impact</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#visuals">Visuals</a></li>
-                <li><a href="#education">Education & Certs</a></li>
-                <li><a href="#contact" class="btn-primary">Contact Me</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="btn-primary" style="padding: 0.4rem 1rem;">Contact</a></li>
             </ul>
-            <div style="display: flex; align-items: center; gap: 1rem;">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+                <!-- Light/Dark Mode Toggle Switch -->
+                <button class="mode-toggle-btn" id="mode-toggle-btn" title="Toggle Light/Dark Mode">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+
+                <!-- Accent Glow Switcher -->
                 <div class="theme-switcher" id="theme-switcher" title="Choose Accent Glow Theme">
                     <span class="theme-dot cyan active" data-theme="cyan" title="Electric Cyan"></span>
                     <span class="theme-dot violet" data-theme="violet" title="Deep Violet"></span>
@@ -58,77 +85,77 @@
         <section class="hero" id="home">
             <div class="container hero-container">
                 <div class="hero-text">
-                    <span class="eyebrow"><i data-lucide="award"></i> Industrial Engineering + Textile Manufacturing + Data Analytics + BI</span>
-                    <h1 class="hero-title">Industrial Engineer & <span class="gradient-text">Business Intelligence Developer</span></h1>
+                    <span class="eyebrow"><i data-lucide="award"></i> 6+ Years Experience • Industrial Engineering & BI</span>
+                    <h1 class="hero-title">Hafiz Muhammad <span class="gradient-text">Zaigham Latif</span></h1>
+                    <h2 class="hero-subhead" style="font-size: 1.25rem; color: var(--accent); font-weight: 600; margin-bottom: 1rem;">
+                        Manufacturing Intelligence Specialist | Industrial Engineer | Business Intelligence Developer
+                    </h2>
                     <p class="hero-mission">
-                        I transform manufacturing and business data into actionable dashboards using <strong>Power BI, Excel, SQL & Power Query</strong>. I help manufacturers and businesses reduce reporting time by 80%, automate Excel processes, build interactive Power BI dashboards, and optimize production using Industrial Engineering techniques.
+                        Transforming manufacturing data into strategic business decisions through <strong>Power BI, SQL, Excel, ERP & Process Optimization.</strong>
                     </p>
 
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; color: var(--text-secondary); font-size: 0.9rem;">
-                        <span><i data-lucide="map-pin" style="color: var(--accent);"></i> 20KM Ferozpur Road, Dullukhurd, Lahore</span>
+                        <span><i data-lucide="map-pin" style="color: var(--accent);"></i> Lahore, Pakistan</span>
                         <span><i data-lucide="mail" style="color: var(--accent);"></i> hafizzaigham9@gmail.com</span>
                         <span><i data-lucide="phone" style="color: var(--accent);"></i> +92-321-2095794</span>
                     </div>
+
+                    <!-- CTA Buttons (Prompt Specs: Green, Blue, Dark) -->
                     <div class="hero-cta">
-                        <a href="https://drive.google.com/file/d/1ow1c3HYK9AlvkLf7duqwFMT9_dZbtBvE/view?usp=sharing" target="_blank" class="btn-primary"><i data-lucide="file-down"></i> Download Official Resume</a>
+                        <a href="#projects" class="btn-hero-green"><i data-lucide="folder-kanban"></i> View My Projects</a>
+                        <a href="https://drive.google.com/file/d/1ow1c3HYK9AlvkLf7duqwFMT9_dZbtBvE/view?usp=sharing" target="_blank" class="btn-hero-blue"><i data-lucide="file-down"></i> Download Resume</a>
+                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20hire%20you." target="_blank" class="btn-hero-dark"><i data-lucide="send"></i> Hire Me</a>
                         <button class="btn-secondary" id="open-exec-summary-btn" style="padding: 0.8rem 1.2rem;" title="1-Page Executive Briefing Sheet"><i data-lucide="award"></i> Executive Summary</button>
-                        <a href="#projects" class="btn-secondary"><i data-lucide="folder-kanban"></i> View Case Studies</a>
                     </div>
                 </div>
 
                 <div class="hero-image">
-                    <div class="img-wrapper lightbox-trigger" data-full-img="assets/profile.jpg" data-caption="Hafiz Muhammad Zaigham Latif — Industrial Engineer & BI Developer">
-                        <img src="assets/profile.jpg" alt="Hafiz Muhammad Zaigham Latif" class="profile-pic">
-                        <div class="img-zoom-hint"><i data-lucide="maximize-2"></i> Full View</div>
+                    <div class="hero-img-box">
+                        <div class="img-wrapper lightbox-trigger" data-full-img="assets/profile.jpg" data-caption="Hafiz Muhammad Zaigham Latif — Manufacturing Intelligence Specialist">
+                            <img src="assets/profile.jpg" alt="Hafiz Muhammad Zaigham Latif" class="profile-pic">
+                            <div class="img-zoom-hint"><i data-lucide="maximize-2"></i> Full View</div>
+                        </div>
+                        
+                        <!-- Floating Skill Badges Floating Outside Image Frame -->
+                        <div class="floating-badge badge-1"><i data-lucide="bar-chart-2"></i> Power BI</div>
+                        <div class="floating-badge badge-2"><i data-lucide="database"></i> SQL</div>
+                        <div class="floating-badge badge-3"><i data-lucide="cpu"></i> ERP & RFID</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Animated Impact Stats Bar -->
-            <div class="container">
-                <div class="hero-stats-bar">
-                    <div class="stat-box">
-                        <div class="stat-icon"><i data-lucide="briefcase"></i></div>
-                        <div>
-                            <div class="stat-number" data-target="6" data-suffix="+">0+</div>
-                            <div class="stat-label">Years in Textile Manufacturing</div>
-                        </div>
+            <!-- Professional Statistics Bar (Prompt Specs: 6 Cards Grid) -->
+            <div class="container" style="margin-top: 2rem;">
+                <div class="hero-stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="6" data-suffix="+">0+</div>
+                        <div class="stat-title">Years Experience</div>
+                        <div class="stat-sub">Textile & Footwear IE</div>
                     </div>
-                    <div class="stat-box">
-                        <div class="stat-icon"><i data-lucide="bar-chart-2"></i></div>
-                        <div>
-                            <div class="stat-number" data-target="150" data-suffix="+">0+</div>
-                            <div class="stat-label">Dashboards Built</div>
-                        </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="100" data-suffix="+">0+</div>
+                        <div class="stat-title">Automated Reports</div>
+                        <div class="stat-sub">Excel VBA & Power Query</div>
                     </div>
-                    <div class="stat-box">
-                        <div class="stat-icon"><i data-lucide="database"></i></div>
-                        <div>
-                            <div class="stat-number" data-target="500" data-suffix="K+">0K+</div>
-                            <div class="stat-label">Data Rows Analyzed</div>
-                        </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="20" data-suffix="+">0+</div>
+                        <div class="stat-title">Interactive Dashboards</div>
+                        <div class="stat-sub">Power BI & DAX Engines</div>
                     </div>
-                    <div class="stat-box">
-                        <div class="stat-icon"><i data-lucide="clock"></i></div>
-                        <div>
-                            <div class="stat-number" data-target="80" data-suffix="%">0%</div>
-                            <div class="stat-label">Reduced Manual Reporting Time</div>
-                        </div>
+                    <div class="stat-card">
+                        <div class="stat-icon-badge"><i data-lucide="factory"></i></div>
+                        <div class="stat-title" style="font-size: 1.1rem; color: var(--accent);">Manufacturing</div>
+                        <div class="stat-sub">Industry Specialist</div>
                     </div>
-                </div>
-            </div>
-
-            <!-- 🏆 Featured Highlights Strip (Directive #15) -->
-            <div class="container" style="margin-top: 2rem; position: relative; z-index: 5;">
-                <div class="featured-highlights-card">
-                    <h3>🏆 Featured Highlights & Demonstrated Proof</h3>
-                    <div class="highlights-grid">
-                        <div class="highlight-item"><i data-lucide="check-circle-2"></i> <span>6+ Years Textile & Garment IE Expert</span></div>
-                        <div class="highlight-item"><i data-lucide="check-circle-2"></i> <span>150+ Interactive Power BI Dashboards Deployed</span></div>
-                        <div class="highlight-item"><i data-lucide="check-circle-2"></i> <span>500+ Automated Excel Reports & Workbooks</span></div>
-                        <div class="highlight-item"><i data-lucide="check-circle-2"></i> <span>80% Reduction in Daily Reporting Lag</span></div>
-                        <div class="highlight-item"><i data-lucide="check-circle-2"></i> <span>3,400+ Standardized Operations (0% Error)</span></div>
-                        <div class="highlight-item"><i data-lucide="check-circle-2"></i> <span>ERP & RFID Real-Time Factory Integration</span></div>
+                    <div class="stat-card">
+                        <div class="stat-icon-badge"><i data-lucide="cpu"></i></div>
+                        <div class="stat-title" style="font-size: 1.1rem; color: var(--accent);">ERP & RFID</div>
+                        <div class="stat-sub">Floor Automation</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon-badge"><i data-lucide="trending-up"></i></div>
+                        <div class="stat-title" style="font-size: 1.1rem; color: var(--accent);">Data-Driven</div>
+                        <div class="stat-sub">Decision Making</div>
                     </div>
                 </div>
             </div>
@@ -139,706 +166,737 @@
         <!-- Tech Stack Marquee -->
         <div class="tech-marquee">
             <div class="marquee-content">
-                <span>Power BI</span> • <span>Power Apps</span> • <span>Power Automate</span> • <span>Power Query</span> • <span>VBA / Macros</span> • <span>Cut-to-Pack Costing</span> • <span>SAM Validation</span> • <span>Operation Breakdowns</span> • <span>SOP & JD Authoring</span> • <span>Visio Organograms</span> • <span>INA Hanger Systems</span> • <span>RFID Integration</span> • 
-                <span>Power BI</span> • <span>Power Apps</span> • <span>Power Automate</span> • <span>Power Query</span> • <span>VBA / Macros</span> • <span>Cut-to-Pack Costing</span> • <span>SAM Validation</span> • <span>Operation Breakdowns</span> • <span>SOP & JD Authoring</span> • <span>Visio Organograms</span> • <span>INA Hanger Systems</span> • <span>RFID Integration</span>
+                <span>Power BI</span> • <span>SQL</span> • <span>Excel VBA</span> • <span>Power Query</span> • <span>DAX</span> • <span>ERP Systems</span> • <span>RFID Floor Tracking</span> • <span>SAM Validation</span> • <span>Cut-to-Pack Costing</span> • <span>Operation Breakdowns</span> • <span>Visio Organograms</span> • <span>Lean Manufacturing</span> • 
+                <span>Power BI</span> • <span>SQL</span> • <span>Excel VBA</span> • <span>Power Query</span> • <span>DAX</span> • <span>ERP Systems</span> • <span>RFID Floor Tracking</span> • <span>SAM Validation</span> • <span>Cut-to-Pack Costing</span> • <span>Operation Breakdowns</span> • <span>Visio Organograms</span> • <span>Lean Manufacturing</span>
             </div>
         </div>
 
-        <!-- SECTION 2: Core Expertise & Pillars -->
-        <section class="section" id="majors">
+        <!-- SECTION 2: About Me (Storytelling Narrative) -->
+        <section class="section alt-bg" id="about">
             <div class="container">
-                <h2 class="section-title">Core <span class="accent">Pillars</span></h2>
-                <p class="section-subtitle">Bridging Industrial Engineering with advanced Business Intelligence and digital factory low-code development.</p>
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+                <p class="section-subtitle">Bridging Industrial Engineering with Advanced Business Intelligence.</p>
 
-                <div class="majors-grid">
-                    <!-- Major 1 -->
-                    <div class="major-card tilt-card">
-                        <div class="icon-box"><i data-lucide="pie-chart"></i></div>
-                        <h3>Business Intelligence & Data Analytics</h3>
-                        <p class="focus">Executive Decision Support</p>
-                        <p class="pitch">Developing Power BI dashboards, Power Query data extraction pipelines, and advanced MS Excel analytical models to provide 100% real-time visibility into factory floor metrics.</p>
-                        <ul class="skills-list">
-                            <li>Power BI Dashboards</li>
-                            <li>Power Query ETL</li>
-                            <li>Excel VBA / Macros</li>
-                            <li>KPI Reporting</li>
-                        </ul>
+                <div class="about-story-card tilt-card">
+                    <div class="about-story-header">
+                        <i data-lucide="book-open" class="accent-icon"></i>
+                        <h3>Transforming Data into Actionable Insights</h3>
                     </div>
-
-                    <!-- Major 2 -->
-                    <div class="major-card tilt-card">
-                        <div class="icon-box"><i data-lucide="cpu"></i></div>
-                        <h3>Low-Code Factory Automation</h3>
-                        <p class="focus">Digital Workflow Transformation</p>
-                        <p class="pitch">Building custom Microsoft Power Apps, automated cloud flows, and digital validation systems that eliminate paper voucher audit errors and streamline operator payments.</p>
-                        <ul class="skills-list">
-                            <li>Power Apps</li>
-                            <li>Power Automate</li>
-                            <li>Voucher Validation</li>
-                            <li>ERP & RFID Integration</li>
-                        </ul>
-                    </div>
-
-                    <!-- Major 3 -->
-                    <div class="major-card tilt-card">
-                        <div class="icon-box"><i data-lucide="dollar-sign"></i></div>
-                        <h3>Industrial Cost Engineering</h3>
-                        <p class="focus">Financial Precision in Apparel</p>
-                        <p class="pitch">Preparing cut-to-pack actual & tentative costing for buyer submissions, validating SAM, and designing skill-tiered rate structures that incentivize workers while protecting CPP margins.</p>
-                        <ul class="skills-list">
-                            <li>SAM Validation</li>
-                            <li>Cut-to-Pack Costing</li>
-                            <li>CPP Analysis</li>
-                            <li>Skill Rate Lists</li>
-                        </ul>
-                    </div>
-
-                    <!-- Major 4 -->
-                    <div class="major-card tilt-card">
-                        <div class="icon-box"><i data-lucide="activity"></i></div>
-                        <h3>Process Optimization & IE</h3>
-                        <p class="focus">Maximizing Workflow Velocity</p>
-                        <p class="pitch">Calibrating INA Hanger Systems, conducting Work Studies, developing Operation Bulletins (OBs), examining labor ratios, and executing executive risk analysis meetings.</p>
-                        <ul class="skills-list">
-                            <li>Work Study</li>
-                            <li>INA Hanger Lines</li>
-                            <li>OB Development</li>
-                            <li>Overtime & Labor Ratio</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 2.5: Executive Career Milestones Banner -->
-        <section class="section" id="milestones" style="padding: 3.5rem 0; background: rgba(11, 16, 33, 0.5); border-y: 1px solid var(--glass-border);">
-            <div class="container">
-                <h2 class="section-title">Career <span class="accent">Milestones</span></h2>
-                <p class="section-subtitle">Key achievements, promotional growth, and operational breakthroughs in Industrial Engineering.</p>
-
-                <div class="milestones-grid">
-                    <div class="milestone-card tilt-card">
-                        <div class="milestone-badge"><i data-lucide="trending-up"></i></div>
-                        <div class="milestone-number">4x</div>
-                        <h4>Multi-Stage Promotion Track</h4>
-                        <p>Promoted across 4 successive roles at Combined Fabrics Ltd: <em>Computer Operator ➔ Work Study Officer ➔ Officer ➔ Senior Officer</em>.</p>
-                    </div>
-
-                    <div class="milestone-card tilt-card">
-                        <div class="milestone-badge"><i data-lucide="layers"></i></div>
-                        <div class="milestone-number">3,400+</div>
-                        <h4>Standardized Operations</h4>
-                        <p>Standardized operation names, SAM rates, and remarks across factory floors to unify reporting & payment auditing.</p>
-                    </div>
-
-                    <div class="milestone-card tilt-card">
-                        <div class="milestone-badge"><i data-lucide="shield-check"></i></div>
-                        <div class="milestone-number">0%</div>
-                        <h4>Voucher Error Discrepancy</h4>
-                        <p>Eliminated manual paper voucher discrepancies via low-code digital validation workflows & rate engineering.</p>
-                    </div>
-
-                    <div class="milestone-card tilt-card">
-                        <div class="milestone-badge"><i data-lucide="book-open"></i></div>
-                        <div class="milestone-number">Hifz</div>
-                        <h4>Mental Discipline & Integrity</h4>
-                        <p>Hifz-e-Quran foundation cultivating exceptional memory retention, extreme focus, and uncompromised personal integrity.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 3: Professional Work Experience -->
-        <section class="section alt-bg" id="experience">
-            <div class="container">
-                <h2 class="section-title">Professional <span class="accent">Experience</span></h2>
-                <p class="section-subtitle">6+ years of proven track record across leading textile & footwear manufacturing operations in Pakistan.</p>
-
-                <div class="experience-timeline">
-                    <!-- Combined Fabrics Limited -->
-                    <div class="company-card tilt-card">
-                        <div class="company-header">
-                            <div class="company-title">
-                                <h3>Combined Fabrics Limited</h3>
-                                <div class="company-location"><i data-lucide="map-pin"></i> Lahore, Pakistan</div>
-                            </div>
-                            <span class="role-date">Oct 2023 – Present (Senior Officer)</span>
-                        </div>
-
-                        <!-- Role 1 -->
-                        <div class="role-block">
-                            <div class="role-header">
-                                <span class="role-title">Senior Officer — IE & Data Analytics</span>
-                                <span class="role-date">Oct 2023 – Present</span>
-                            </div>
-                            <ul class="exp-bullets">
-                                <li>Prepared and analyzed cut-to-pack actual and tentative costing for buyer submissions and strategic pricing.</li>
-                                <li>Architected and mapped comprehensive company-wide Organizational Structures (Organograms) and Reporting Hierarchies using MS Visio, defining reporting channels and manpower requirements across Rate/SAM Costing, Pre-Production, Sewing, Finishing, Packing, and IE Audit departments.</li>
-                                <li>Authored, reviewed, and standardized Standard Operating Procedures (SOPs) for operational processes and Job Descriptions (JDs) for technical designations across departments.</li>
-                                <li>Developed company portfolio presentations for new buyers and business development initiatives.</li>
-                                <li>Monitored and analyzed overtime trends and direct vs. indirect labor ratios to optimize manpower allocation.</li>
-                                <li>Calculated and monitored Cost per Product (CPP) to improve budget control and operational efficiency.</li>
-                                <li>Conducted SAM validations and administered updated rate lists and SAM sheets for accurate floor management.</li>
-                                <li>Assigned operation rates based on skill-level assessments, standardizing operation names, rates, and remarks to reduce voucher discrepancies to zero.</li>
-                                <li>Prepared, validated, and analyzed vouchers and cost-per-piece reports across all operational units.</li>
-                                <li>Led weekly and monthly risk analysis meetings, developing Power BI dashboards to support strategic executive decision-making.</li>
-                            </ul>
-                        </div>
-
-                        <!-- Role 2 -->
-                        <div class="role-block collapsed">
-                            <div class="role-header expandable-trigger">
-                                <span class="role-title"><i data-lucide="chevron-down" class="toggle-icon"></i> Officer</span>
-                                <span class="role-date">Jul 2022 – Sep 2023</span>
-                            </div>
-                            <ul class="exp-bullets">
-                                <li>Delivered analytical PowerPoint presentations to senior management covering production trends and bottlenecks.</li>
-                                <li>Implemented and calibrated new INA Hanger Line structures, improving workflow efficiency and garment throughput.</li>
-                            </ul>
-                        </div>
-
-                        <!-- Role 3 -->
-                        <div class="role-block collapsed">
-                            <div class="role-header expandable-trigger">
-                                <span class="role-title"><i data-lucide="chevron-down" class="toggle-icon"></i> Work Study Officer</span>
-                                <span class="role-date">Jun 2021 – Jun 2022</span>
-                            </div>
-                            <ul class="exp-bullets">
-                                <li>Created standardized Excel-based reports and collaborated with ERP teams to develop and refine operational reports.</li>
-                                <li>Established and monitored KPI frameworks for production and services departments.</li>
-                                <li>Conducted cost analysis for cut-to-pack and services operations.</li>
-                            </ul>
-                        </div>
-
-                        <!-- Role 4 -->
-                        <div class="role-block collapsed">
-                            <div class="role-header expandable-trigger">
-                                <span class="role-title"><i data-lucide="chevron-down" class="toggle-icon"></i> Computer Operator</span>
-                                <span class="role-date">Nov 2018 – Oct 2020</span>
-                            </div>
-                            <ul class="exp-bullets">
-                                <li>Managed INA Hanger System operations, maximizing daily production output and minimizing line downtime.</li>
-                                <li>Verified barcode scans and processed operator payments accurately.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Firhaj Footwear -->
-                    <div class="company-card tilt-card">
-                        <div class="company-header">
-                            <div class="company-title">
-                                <h3>Firhaj Footwear</h3>
-                                <div class="company-location"><i data-lucide="map-pin"></i> Lahore, Pakistan</div>
-                            </div>
-                            <span class="role-date">Nov 2020 – May 2021</span>
-                        </div>
-
-                        <div class="role-block">
-                            <div class="role-header">
-                                <span class="role-title">Industrial Engineering Officer</span>
-                                <span class="role-date">Nov 2020 – May 2021</span>
-                            </div>
-                            <ul class="exp-bullets">
-                                <li>Developed Operational Bulletins (OBs) for current and upcoming footwear styles.</li>
-                                <li>Conducted cost-per-minute analysis to improve production efficiency and line balance.</li>
-                                <li>Verified SAM calculations, aligning workforce capacity with daily production targets.</li>
-                                <li>Analyzed production reports to identify operational gaps and implement corrective action plans.</li>
-                            </ul>
+                    <div class="about-story-content">
+                        <p class="story-lead">
+                            Every manufacturing company generates massive amounts of data. The challenge isn't collecting it. The challenge is transforming it into meaningful insights that improve productivity, reduce costs, and support better decisions.
+                        </p>
+                        <p>
+                            For the past <strong>6+ years</strong>, I have worked in Industrial Engineering and Manufacturing Analytics at market-leading organizations like <strong>Combined Fabrics Limited</strong> and <strong>Firhaj Footwear</strong>, helping teams optimize production through Business Intelligence, ERP integration, RFID systems, Power BI dashboards, SQL reporting, and continuous process improvement.
+                        </p>
+                        <div class="story-highlights-pills">
+                            <span class="pill-item"><i data-lucide="check"></i> 80% Reduction in Reporting Time</span>
+                            <span class="pill-item"><i data-lucide="check"></i> 0% Voucher Audit Discrepancies</span>
+                            <span class="pill-item"><i data-lucide="check"></i> 3,400+ Standardized Factory Operations</span>
+                            <span class="pill-item"><i data-lucide="check"></i> 100% Real-Time Shop Floor Traceability</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 4: Technical Toolkit -->
-        <section class="section" id="toolkit">
+        <!-- SECTION 3: My Expertise (4 Professional Checkmark Cards) -->
+        <section class="section" id="expertise">
             <div class="container">
-                <h2 class="section-title">Technical <span class="accent">Toolkit</span></h2>
-                <p class="section-subtitle">Multi-disciplinary technical arsenal across analytics, low-code platforms, and industrial methods.</p>
-                
-                <div class="filter-tabs">
-                    <button class="filter-btn active" data-filter="all">All Skills</button>
-                    <button class="filter-btn" data-filter="data">Data & BI</button>
-                    <button class="filter-btn" data-filter="dev">App Dev & Low-Code</button>
-                    <button class="filter-btn" data-filter="ie">IE & Costing</button>
-                    <button class="filter-btn" data-filter="creative">IT & Creative</button>
-                </div>
+                <h2 class="section-title">My <span class="accent">Expertise</span></h2>
+                <p class="section-subtitle">Core technical capabilities across engineering, analytics, business intelligence, and factory systems.</p>
 
-                <div class="toolkit-grid">
-                    <div class="toolkit-category toolkit-card" data-category="data">
-                        <div class="toolkit-header">
-                            <i data-lucide="bar-chart-2"></i>
-                            <h3>Data Analytics</h3>
+                <div class="expertise-grid">
+                    <!-- Card 1: Manufacturing Engineering -->
+                    <div class="expertise-card tilt-card">
+                        <div class="exp-header">
+                            <div class="exp-icon"><i data-lucide="settings"></i></div>
+                            <h3>Manufacturing Engineering</h3>
                         </div>
-                        <div class="toolkit-tags">
-                            <span class="tag-pill">Microsoft Power BI</span>
-                            <span class="tag-pill">Power Query</span>
-                            <span class="tag-pill">MS Excel (VBA & Macros)</span>
-                            <span class="tag-pill">SQL Queries</span>
-                            <span class="tag-pill">DAX Modeling</span>
-                            <span class="tag-pill">Data Cleaning</span>
-                            <span class="tag-pill">ETL Pipelines</span>
-                        </div>
+                        <ul class="exp-check-list">
+                            <li><i data-lucide="check-circle-2"></i> Work Study</li>
+                            <li><i data-lucide="check-circle-2"></i> SAM Analysis</li>
+                            <li><i data-lucide="check-circle-2"></i> Line Balancing</li>
+                            <li><i data-lucide="check-circle-2"></i> Capacity Planning</li>
+                            <li><i data-lucide="check-circle-2"></i> Cut-to-Pack Costing</li>
+                            <li><i data-lucide="check-circle-2"></i> Production Planning</li>
+                        </ul>
                     </div>
 
-                    <div class="toolkit-category toolkit-card" data-category="ie">
-                        <div class="toolkit-header">
-                            <i data-lucide="settings"></i>
-                            <h3>Industrial Engineering</h3>
-                        </div>
-                        <div class="toolkit-tags">
-                            <span class="tag-pill">SAM Validation</span>
-                            <span class="tag-pill">Work Study</span>
-                            <span class="tag-pill">Cut-to-Pack Costing</span>
-                            <span class="tag-pill">Line Balancing</span>
-                            <span class="tag-pill">Operation Breakdown (OB)</span>
-                            <span class="tag-pill">RFID Integration</span>
-                            <span class="tag-pill">ERP Systems</span>
-                            <span class="tag-pill">INA Hanger Lines</span>
-                        </div>
-                    </div>
-
-                    <div class="toolkit-category toolkit-card" data-category="dev">
-                        <div class="toolkit-header">
-                            <i data-lucide="line-chart"></i>
+                    <!-- Card 2: Business Intelligence -->
+                    <div class="expertise-card tilt-card">
+                        <div class="exp-header">
+                            <div class="exp-icon"><i data-lucide="bar-chart-2"></i></div>
                             <h3>Business Intelligence</h3>
                         </div>
-                        <div class="toolkit-tags">
-                            <span class="tag-pill">Dashboard Design</span>
-                            <span class="tag-pill">KPI Reporting</span>
-                            <span class="tag-pill">Process Automation</span>
-                            <span class="tag-pill">Power Apps (Canvas & Model)</span>
-                            <span class="tag-pill">Power Automate</span>
-                            <span class="tag-pill">Advanced Visualization</span>
-                            <span class="tag-pill">MS Visio Organograms</span>
-                        </div>
+                        <ul class="exp-check-list">
+                            <li><i data-lucide="check-circle-2"></i> Power BI</li>
+                            <li><i data-lucide="check-circle-2"></i> Dashboard Design</li>
+                            <li><i data-lucide="check-circle-2"></i> DAX Calculations</li>
+                            <li><i data-lucide="check-circle-2"></i> KPI Reporting</li>
+                            <li><i data-lucide="check-circle-2"></i> Data Modeling</li>
+                            <li><i data-lucide="check-circle-2"></i> Executive Briefings</li>
+                        </ul>
                     </div>
-                </div>
 
-                <!-- Skill Proficiency & Technical Mastery Bar Matrix -->
-                <div class="proficiency-section" style="margin-top: 3.5rem;">
-                    <h3 class="section-title sm" style="font-size: 2rem; margin-bottom: 2rem; text-align: center;">Technical <span class="accent">Mastery Matrix</span></h3>
-                    
-                    <div class="proficiency-grid">
-                        <div class="proficiency-item">
-                            <div class="prof-label-row">
-                                <span class="prof-name"><i data-lucide="bar-chart-2"></i> Power BI & Power Query</span>
-                                <span class="prof-pct">95%</span>
-                            </div>
-                            <div class="prof-bar-track">
-                                <div class="prof-bar-fill" style="width: 95%;"></div>
-                            </div>
+                    <!-- Card 3: Data Analytics -->
+                    <div class="expertise-card tilt-card">
+                        <div class="exp-header">
+                            <div class="exp-icon"><i data-lucide="database"></i></div>
+                            <h3>Data Analytics</h3>
                         </div>
+                        <ul class="exp-check-list">
+                            <li><i data-lucide="check-circle-2"></i> SQL Queries</li>
+                            <li><i data-lucide="check-circle-2"></i> MS Excel (VBA/Macros)</li>
+                            <li><i data-lucide="check-circle-2"></i> Power Query ETL</li>
+                            <li><i data-lucide="check-circle-2"></i> Data Cleaning</li>
+                            <li><i data-lucide="check-circle-2"></i> Report Automation</li>
+                            <li><i data-lucide="check-circle-2"></i> Python Basics</li>
+                        </ul>
+                    </div>
 
-                        <div class="proficiency-item">
-                            <div class="prof-label-row">
-                                <span class="prof-name"><i data-lucide="file-spreadsheet"></i> MS Excel (VBA, Macros & Modeling)</span>
-                                <span class="prof-pct">95%</span>
-                            </div>
-                            <div class="prof-bar-track">
-                                <div class="prof-bar-fill" style="width: 95%;"></div>
-                            </div>
+                    <!-- Card 4: Manufacturing Systems -->
+                    <div class="expertise-card tilt-card">
+                        <div class="exp-header">
+                            <div class="exp-icon"><i data-lucide="cpu"></i></div>
+                            <h3>Manufacturing Systems</h3>
                         </div>
-
-                        <div class="proficiency-item">
-                            <div class="prof-label-row">
-                                <span class="prof-name"><i data-lucide="cpu"></i> Power Apps & Low-Code Automations</span>
-                                <span class="prof-pct">90%</span>
-                            </div>
-                            <div class="prof-bar-track">
-                                <div class="prof-bar-fill" style="width: 90%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="proficiency-item">
-                            <div class="prof-label-row">
-                                <span class="prof-name"><i data-lucide="clock"></i> SAM Analysis & Work Study</span>
-                                <span class="prof-pct">92%</span>
-                            </div>
-                            <div class="prof-bar-track">
-                                <div class="prof-bar-fill" style="width: 92%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="proficiency-item">
-                            <div class="prof-label-row">
-                                <span class="prof-name"><i data-lucide="dollar-sign"></i> Cut-to-Pack Costing & CPP Analysis</span>
-                                <span class="prof-pct">90%</span>
-                            </div>
-                            <div class="prof-bar-track">
-                                <div class="prof-bar-fill" style="width: 90%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="proficiency-item">
-                            <div class="prof-label-row">
-                                <span class="prof-name"><i data-lucide="git-branch"></i> MS Visio Organograms & Governance</span>
-                                <span class="prof-pct">90%</span>
-                            </div>
-                            <div class="prof-bar-track">
-                                <div class="prof-bar-fill" style="width: 90%;"></div>
-                            </div>
-                        </div>
+                        <ul class="exp-check-list">
+                            <li><i data-lucide="check-circle-2"></i> ERP Systems</li>
+                            <li><i data-lucide="check-circle-2"></i> RFID Floor Integration</li>
+                            <li><i data-lucide="check-circle-2"></i> Lean Manufacturing</li>
+                            <li><i data-lucide="check-circle-2"></i> Continuous Improvement</li>
+                            <li><i data-lucide="check-circle-2"></i> Root Cause Analysis</li>
+                            <li><i data-lucide="check-circle-2"></i> INA Hanger Lines</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 5: Key Projects & Case Studies -->
+        <!-- SECTION 4: Featured Projects & Case Studies -->
         <section class="section alt-bg" id="projects">
             <div class="container">
-                <h2 class="section-title">Case Studies & <span class="accent">Projects</span></h2>
-                <p class="section-subtitle">Demonstrated business impact, problem-solving case studies, and quantifiable results in textile manufacturing.</p>
+                <h2 class="section-title">Featured <span class="accent">Projects & Case Studies</span></h2>
+                <p class="section-subtitle">Every project is a solved business problem with demonstrated, measurable results.</p>
 
                 <div class="projects-grid">
-                    <!-- Case Study 1 (Directive #4) -->
-                    <div class="project-card tilt-card">
+                    <!-- Project 1: Production Dashboard -->
+                    <div class="project-card tilt-card" data-project="1">
                         <div class="project-card-header">
                             <span class="project-badge">Featured Case Study</span>
-                            <i data-lucide="bar-chart-2" class="accent"></i>
+                            <i data-lucide="line-chart" class="accent"></i>
                         </div>
                         <div class="project-content">
-                            <h3>Production & OEE Line Balance Dashboard</h3>
-                            <div class="project-details">
-                                <p><strong>Problem:</strong> Factory management couldn't monitor real-time production efficiency, hanger line bottlenecks, or daily operator downtime, leading to delayed 24-hour paper reporting lag.</p>
-                                <p><strong>Solution:</strong> Built an interactive web-based Power BI Dashboard integrated with INA Hanger Systems and ERP SQL database streaming real-time output metrics.</p>
-                                <p style="margin-top: 0.6rem;"><strong>Technologies:</strong></p>
-                                <div class="service-tags" style="margin-bottom: 0.8rem;">
+                            <h3>Production & OEE Performance Dashboard</h3>
+                            <div class="case-study-block">
+                                <p><strong>Problem:</strong> Production managers manually prepared paper reports every day, leading to delayed 24-hour reporting lag and undetected operator downtime.</p>
+                                <p><strong>Solution:</strong> Built an automated web-based Power BI Dashboard connected live with ERP and INA Hanger Line SQL database streams.</p>
+                                <p style="margin-top: 0.5rem;"><strong>Technologies:</strong></p>
+                                <div class="tech-pills-row">
                                     <span class="tag-pill">Power BI</span>
-                                    <span class="tag-pill">Power Query</span>
-                                    <span class="tag-pill">DAX</span>
                                     <span class="tag-pill">SQL</span>
+                                    <span class="tag-pill">Power Query</span>
                                     <span class="tag-pill">Excel</span>
                                 </div>
-                                <p><strong>Business Impact & Results:</strong></p>
-                                <ul style="list-style: none; padding-left: 0; color: var(--accent); font-size: 0.88rem; line-height: 1.6;">
-                                    <li>✓ Saved 5+ hours of manual compilation daily</li>
+                                <p style="margin-top: 0.5rem;"><strong>Features:</strong> Production | Efficiency % | Downtime | Target vs Actual | Operator Performance</p>
+                                <p style="margin-top: 0.5rem;"><strong>Business Impact:</strong></p>
+                                <ul class="impact-list">
                                     <li>✓ Reduced manual reporting time by 80%</li>
-                                    <li>✓ 100% real-time shop floor visibility & OEE tracking</li>
-                                    <li>✓ Increased executive decision speed & bottleneck resolution</li>
+                                    <li>✓ 100% real-time shop floor production visibility</li>
+                                    <li>✓ Saved 5+ hours of daily compilation work</li>
                                 </ul>
                             </div>
+                            <button class="btn-primary case-study-btn" data-cs="1" style="width: 100%; margin-top: 1rem;">View Complete Case Study</button>
                         </div>
                     </div>
 
-                    <!-- Case Study 2 -->
-                    <div class="project-card tilt-card">
-                        <div class="project-card-header">
-                            <span class="project-badge">Process Automation</span>
-                            <i data-lucide="shield-check" class="accent"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>Workforce Voucher & Rate Validation System</h3>
-                            <div class="project-details">
-                                <p><strong>Problem:</strong> Unaligned piece-rate pay scales and paper vouchers caused worker payment friction, requiring 3+ days of manual payment audits.</p>
-                                <p><strong>Solution:</strong> Standardized workforce coding for 3,400+ operations and deployed a digital Power Apps voucher validation workflow.</p>
-                                <p style="margin-top: 0.6rem;"><strong>Technologies:</strong></p>
-                                <div class="service-tags" style="margin-bottom: 0.8rem;">
-                                    <span class="tag-pill">Power Apps</span>
-                                    <span class="tag-pill">Power Automate</span>
-                                    <span class="tag-pill">Excel VBA</span>
-                                    <span class="tag-pill">SQL</span>
-                                </div>
-                                <p><strong>Business Impact & Results:</strong></p>
-                                <ul style="list-style: none; padding-left: 0; color: var(--accent); font-size: 0.88rem; line-height: 1.6;">
-                                    <li>✓ 0% Voucher Error Discrepancy Rate</li>
-                                    <li>✓ Saved 15 hours/week in manual payment auditing</li>
-                                    <li>✓ Instant automated wage & piece-rate processing</li>
-                                    <li>✓ Standardized 3,400+ factory operations & SAM rates</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Case Study 3 -->
-                    <div class="project-card tilt-card">
+                    <!-- Project 2: Costing Dashboard -->
+                    <div class="project-card tilt-card" data-project="2">
                         <div class="project-card-header">
                             <span class="project-badge">Cost Engineering</span>
                             <i data-lucide="dollar-sign" class="accent"></i>
                         </div>
                         <div class="project-content">
-                            <h3>Cut-to-Pack Costing & CPP Analysis Engine</h3>
-                            <div class="project-details">
+                            <h3>Cut-to-Pack Costing & CPP Analysis Dashboard</h3>
+                            <div class="case-study-block">
                                 <p><strong>Problem:</strong> Inaccurate tentative costing for buyer submissions risk-threatened profit margins and created budget variance during bulk production.</p>
-                                <p><strong>Solution:</strong> Engineered SAM-validated cut-to-pack actual & tentative costing models and monitored direct vs. indirect labor ratios.</p>
-                                <p style="margin-top: 0.6rem;"><strong>Technologies:</strong></p>
-                                <div class="service-tags" style="margin-bottom: 0.8rem;">
-                                    <span class="tag-pill">MS Excel (VBA)</span>
-                                    <span class="tag-pill">SAM Engineering</span>
+                                <p><strong>Solution:</strong> Built SAM-validated Cut-to-Pack Costing Engine in Excel & Power BI analyzing direct vs indirect labor ratios.</p>
+                                <p style="margin-top: 0.5rem;"><strong>Technologies:</strong></p>
+                                <div class="tech-pills-row">
+                                    <span class="tag-pill">Power BI</span>
+                                    <span class="tag-pill">Excel VBA</span>
                                     <span class="tag-pill">Power Query</span>
-                                    <span class="tag-pill">Cost Modeling</span>
+                                    <span class="tag-pill">SAM Costing</span>
                                 </div>
-                                <p><strong>Business Impact & Results:</strong></p>
-                                <ul style="list-style: none; padding-left: 0; color: var(--accent); font-size: 0.88rem; line-height: 1.6;">
+                                <p style="margin-top: 0.5rem;"><strong>Features:</strong> Tentative Cost Sheets | CPP Analysis | Labor Ratios | Margin Protection</p>
+                                <p style="margin-top: 0.5rem;"><strong>Business Impact:</strong></p>
+                                <ul class="impact-list">
                                     <li>✓ Protected buyer submission profit margins</li>
-                                    <li>✓ Reduced CPP cost-per-piece variance</li>
-                                    <li>✓ Optimized direct/indirect manpower labor ratios</li>
-                                    <li>✓ Accelerated tentative cost sheet preparation by 60%</li>
+                                    <li>✓ Reduced CPP cost-per-piece variance by 60%</li>
+                                    <li>✓ Accelerated tentative cost sheet prep time</li>
                                 </ul>
                             </div>
+                            <button class="btn-primary case-study-btn" data-cs="2" style="width: 100%; margin-top: 1rem;">View Complete Case Study</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: RFID & INA Hanger Line -->
+                    <div class="project-card tilt-card" data-project="3">
+                        <div class="project-card-header">
+                            <span class="project-badge">RFID & Automation</span>
+                            <i data-lucide="cpu" class="accent"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>RFID & INA Hanger Line Real-Time Dashboard</h3>
+                            <div class="case-study-block">
+                                <p><strong>Problem:</strong> Delayed 24-hour paper logs concealed hanger line bottlenecks and operator idle time on sewing lines.</p>
+                                <p><strong>Solution:</strong> Integrated RFID & INA Hanger Line sensor data streams into Power BI real-time bottleneck alerts.</p>
+                                <p style="margin-top: 0.5rem;"><strong>Technologies:</strong></p>
+                                <div class="tech-pills-row">
+                                    <span class="tag-pill">RFID</span>
+                                    <span class="tag-pill">ERP</span>
+                                    <span class="tag-pill">Power BI</span>
+                                    <span class="tag-pill">SQL</span>
+                                </div>
+                                <p style="margin-top: 0.5rem;"><strong>Features:</strong> Real-time Hanger Tracking | Line Balance | Idle Time Alerts | Operator Efficiency</p>
+                                <p style="margin-top: 0.5rem;"><strong>Business Impact:</strong></p>
+                                <ul class="impact-list">
+                                    <li>✓ Achieved 100% shop floor hanger traceability</li>
+                                    <li>✓ 80% faster line bottleneck resolution</li>
+                                    <li>✓ Maximized garment output per operator hour</li>
+                                </ul>
+                            </div>
+                            <button class="btn-primary case-study-btn" data-cs="3" style="width: 100%; margin-top: 1rem;">View Complete Case Study</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Production Planning -->
+                    <div class="project-card tilt-card" data-project="4">
+                        <div class="project-card-header">
+                            <span class="project-badge">Planning & IE</span>
+                            <i data-lucide="calendar" class="accent"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Production Planning & Capacity Allocation Model</h3>
+                            <div class="case-study-block">
+                                <p><strong>Problem:</strong> Unaligned line capacity and absenteeism caused target garment output shortfalls and line imbalance.</p>
+                                <p><strong>Solution:</strong> Designed dynamic capacity allocation and attendance allowance models in Excel & Power BI.</p>
+                                <p style="margin-top: 0.5rem;"><strong>Technologies:</strong></p>
+                                <div class="tech-pills-row">
+                                    <span class="tag-pill">Excel VBA</span>
+                                    <span class="tag-pill">Power BI</span>
+                                    <span class="tag-pill">Work Study</span>
+                                    <span class="tag-pill">ERP</span>
+                                </div>
+                                <p style="margin-top: 0.5rem;"><strong>Features:</strong> Line Balancing | Capacity Forecast | Attendance Incentive | Target Output</p>
+                                <p style="margin-top: 0.5rem;"><strong>Business Impact:</strong></p>
+                                <ul class="impact-list">
+                                    <li>✓ Increased shop floor operator line presence</li>
+                                    <li>✓ Stabilized daily target garment completion</li>
+                                    <li>✓ Optimized capacity allocation across units</li>
+                                </ul>
+                            </div>
+                            <button class="btn-primary case-study-btn" data-cs="4" style="width: 100%; margin-top: 1rem;">View Complete Case Study</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Quality & Deficit Dashboard -->
+                    <div class="project-card tilt-card" data-project="5">
+                        <div class="project-card-header">
+                            <span class="project-badge">Quality & Deficits</span>
+                            <i data-lucide="shield-alert" class="accent"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Quality & Floor Deficit Reduction Engine</h3>
+                            <div class="case-study-block">
+                                <p><strong>Problem:</strong> Unaddressed floor deficits led to budget overruns and delayed shipment schedules.</p>
+                                <p><strong>Solution:</strong> Led weekly and monthly executive risk analysis meetings using Power BI quality data models.</p>
+                                <p style="margin-top: 0.5rem;"><strong>Technologies:</strong></p>
+                                <div class="tech-pills-row">
+                                    <span class="tag-pill">Power BI</span>
+                                    <span class="tag-pill">DAX</span>
+                                    <span class="tag-pill">SQL</span>
+                                    <span class="tag-pill">Data Modeling</span>
+                                </div>
+                                <p style="margin-top: 0.5rem;"><strong>Features:</strong> Deficit Analysis | Scrap Rates | Root Cause Matrix | Executive Risk Briefings</p>
+                                <p style="margin-top: 0.5rem;"><strong>Business Impact:</strong></p>
+                                <ul class="impact-list">
+                                    <li>✓ Reduced operator daily floor deficits</li>
+                                    <li>✓ Improved shipment on-time delivery rates</li>
+                                    <li>✓ Streamlined executive decision support</li>
+                                </ul>
+                            </div>
+                            <button class="btn-primary case-study-btn" data-cs="5" style="width: 100%; margin-top: 1rem;">View Complete Case Study</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Excel Voucher Automation -->
+                    <div class="project-card tilt-card" data-project="6">
+                        <div class="project-card-header">
+                            <span class="project-badge">Excel Automation</span>
+                            <i data-lucide="file-spreadsheet" class="accent"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Excel Voucher & Wage Validation Automation</h3>
+                            <div class="case-study-block">
+                                <p><strong>Problem:</strong> Manual paper vouchers required 3+ days of audits and created wage payment friction.</p>
+                                <p><strong>Solution:</strong> Deployed digital voucher validation workflows and standardized coding for 3,400+ operations.</p>
+                                <p style="margin-top: 0.5rem;"><strong>Technologies:</strong></p>
+                                <div class="tech-pills-row">
+                                    <span class="tag-pill">Excel VBA</span>
+                                    <span class="tag-pill">Power Query</span>
+                                    <span class="tag-pill">Power Apps</span>
+                                    <span class="tag-pill">SQL</span>
+                                </div>
+                                <p style="margin-top: 0.5rem;"><strong>Features:</strong> Voucher Validation | 3,400+ Standard Operations | Automated Payroll | Audit Engine</p>
+                                <p style="margin-top: 0.5rem;"><strong>Business Impact:</strong></p>
+                                <ul class="impact-list">
+                                    <li>✓ 0% Voucher Audit Discrepancy Rate</li>
+                                    <li>✓ Saved 15 hours/week in manual payment auditing</li>
+                                    <li>✓ Instant automated wage & piece-rate processing</li>
+                                </ul>
+                            </div>
+                            <button class="btn-primary case-study-btn" data-cs="6" style="width: 100%; margin-top: 1rem;">View Complete Case Study</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 5.5: Freelance & Consulting Services -->
+        <!-- SECTION 5: Business Impact (Dark Background Section) -->
+        <section class="section dark-impact-section" id="impact">
+            <div class="container">
+                <h2 class="section-title light-text">Business Impact & <span class="accent">Results Delivered</span></h2>
+                <p class="section-subtitle light-text-muted">Quantifiable operational benefits delivered across manufacturing units.</p>
+
+                <div class="impact-grid-8">
+                    <div class="impact-card-dark">
+                        <i data-lucide="clock" class="impact-icon"></i>
+                        <h4>Reduced Reporting Time</h4>
+                        <p>Cut manual daily reporting compilation lag by 80% through automated Power Query ETL pipelines.</p>
+                    </div>
+                    <div class="impact-card-dark">
+                        <i data-lucide="zap" class="impact-icon"></i>
+                        <h4>Improved Decision Making</h4>
+                        <p>Accelerated executive bottleneck resolution with real-time Power BI floor dashboards.</p>
+                    </div>
+                    <div class="impact-card-dark">
+                        <i data-lucide="file-spreadsheet" class="impact-icon"></i>
+                        <h4>Automated Excel Reports</h4>
+                        <p>Eliminated manual workbook errors across 100+ production and payment reports.</p>
+                    </div>
+                    <div class="impact-card-dark">
+                        <i data-lucide="line-chart" class="impact-icon"></i>
+                        <h4>Production KPI Monitoring</h4>
+                        <p>Established live tracking for SAM, OEE, Downtime, Line Balancing, and Operator Output.</p>
+                    </div>
+                    <div class="impact-card-dark">
+                        <i data-lucide="dollar-sign" class="impact-icon"></i>
+                        <h4>Manufacturing Cost Analysis</h4>
+                        <p>Engineered accurate tentative & actual cut-to-pack cost sheets to protect buyer submission CPP margins.</p>
+                    </div>
+                    <div class="impact-card-dark">
+                        <i data-lucide="database" class="impact-icon"></i>
+                        <h4>ERP Data Integration</h4>
+                        <p>Connected SQL databases and ERP streams to stream unified production metrics seamlessly.</p>
+                    </div>
+                    <div class="impact-card-dark">
+                        <i data-lucide="settings" class="impact-icon"></i>
+                        <h4>Process Optimization</h4>
+                        <p>Standardized over 3,400+ operations, SAM rates, and piece-rate pay scales to zero error.</p>
+                    </div>
+                    <div class="impact-card-dark">
+                        <i data-lucide="eye" class="impact-icon"></i>
+                        <h4>Production Visibility</h4>
+                        <p>Delivered 100% real-time shop floor traceability across INA Hanger Systems and sewing floors.</p>
+                    </div>
+                </div>
+
+                <!-- Industries Served Badges -->
+                <div style="margin-top: 3rem; text-align: center;">
+                    <h3 style="color: #ffffff; font-size: 1.2rem; margin-bottom: 1.2rem;">Industries & Domain Specializations</h3>
+                    <div class="industries-flex">
+                        <span class="ind-badge"><i data-lucide="layers"></i> Textile Manufacturing</span>
+                        <span class="ind-badge"><i data-lucide="scissors"></i> Garments & Apparel</span>
+                        <span class="ind-badge"><i data-lucide="settings"></i> Industrial Engineering</span>
+                        <span class="ind-badge"><i data-lucide="bar-chart-2"></i> Business Intelligence</span>
+                        <span class="ind-badge"><i data-lucide="factory"></i> Manufacturing Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: Services (Fiverr & LinkedIn Ready) -->
         <section class="section" id="services">
             <div class="container">
-                <h2 class="section-title">I Can Help You <span class="accent">With</span></h2>
-                <p class="section-subtitle">High-value freelance & technical consulting services for manufacturers, business owners, and global clients.</p>
+                <h2 class="section-title">Freelance & <span class="accent">Consulting Services</span></h2>
+                <p class="section-subtitle">Tailored Business Intelligence, Industrial Engineering, and Data Automation Solutions.</p>
 
-                <!-- Quick Services Checklist (Directive #6) -->
-                <div class="services-checklist-box" style="margin-bottom: 2.5rem; background: var(--card-bg); border: 1px solid var(--glass-border); border-radius: var(--radius-lg); padding: 1.8rem 2rem; backdrop-filter: blur(14px);">
-                    <h3 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 1.2rem; text-align: center;">✅ Core Freelance Offerings</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; color: var(--text-primary); font-weight: 500; font-size: 0.95rem;">
-                        <span>✅ Power BI Dashboards</span>
-                        <span>✅ Excel Automation & VBA</span>
-                        <span>✅ Power Query ETL Pipelines</span>
-                        <span>✅ Data Cleaning & Modeling</span>
-                        <span>✅ Executive KPI Dashboards</span>
-                        <span>✅ SQL Queries & Data Extraction</span>
-                        <span>✅ Manufacturing Analytics & OBs</span>
-                        <span>✅ Costing Analysis & Cut-to-Pack</span>
-                        <span>✅ Automated Production Reports</span>
-                    </div>
-                </div>
-
-                <div class="services-grid">
-                    <!-- Service 1 -->
+                <div class="services-grid-10">
                     <div class="service-card tilt-card">
                         <div class="service-icon"><i data-lucide="bar-chart-2"></i></div>
-                        <h3>Executive Power BI Dashboard Development</h3>
-                        <p class="service-desc">Custom interactive Power BI dashboards, automated Power Query ETL pipelines, and DAX calculations streaming real-time operational and financial insights for factory floor management.</p>
-                        <div class="service-tags">
-                            <span class="tag-pill">Power BI</span>
-                            <span class="tag-pill">Power Query</span>
-                            <span class="tag-pill">DAX Modeling</span>
-                            <span class="tag-pill">Real-Time Dashboards</span>
-                        </div>
-                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20am%20interested%20in%20your%20Power%20BI%20Dashboard%20Development%20services." target="_blank" class="service-cta">
-                            <span>Request Consultation</span>
-                            <i data-lucide="arrow-right"></i>
-                        </a>
+                        <h3>Power BI Dashboard Development</h3>
+                        <p>Custom interactive Power BI dashboards, DAX calculations, and real-time visualization pipelines.</p>
+                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20need%20Power%20BI%20Dashboard%20Development%20services." target="_blank" class="service-cta"><span>Request Service</span> <i data-lucide="arrow-right"></i></a>
                     </div>
 
-                    <!-- Service 2 -->
+                    <div class="service-card tilt-card">
+                        <div class="service-icon"><i data-lucide="pie-chart"></i></div>
+                        <h3>Business Intelligence Solutions</h3>
+                        <p>End-to-end BI architecture, KPI frameworks, and executive decision-support systems.</p>
+                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20need%20Business%20Intelligence%20Solutions." target="_blank" class="service-cta"><span>Request Service</span> <i data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card tilt-card">
+                        <div class="service-icon"><i data-lucide="factory"></i></div>
+                        <h3>Manufacturing Analytics</h3>
+                        <p>OEE tracking, line balance analytics, operator downtime reporting, and bottleneck identification.</p>
+                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20need%20Manufacturing%20Analytics%20services." target="_blank" class="service-cta"><span>Request Service</span> <i data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card tilt-card">
+                        <div class="service-icon"><i data-lucide="settings"></i></div>
+                        <h3>Industrial Engineering Consulting</h3>
+                        <p>SAM validation, Work Study, Operation Bulletins (OBs), line capacity planning, and labor ratio optimization.</p>
+                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20need%20Industrial%20Engineering%20Consulting." target="_blank" class="service-cta"><span>Request Service</span> <i data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card tilt-card">
+                        <div class="service-icon"><i data-lucide="line-chart"></i></div>
+                        <h3>Production KPI Dashboard</h3>
+                        <p>Automated daily target vs actual tracking, worker efficiency metrics, and floor output monitors.</p>
+                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20need%20a%20Production%20KPI%20Dashboard." target="_blank" class="service-cta"><span>Request Service</span> <i data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card tilt-card">
+                        <div class="service-icon"><i data-lucide="database"></i></div>
+                        <h3>SQL Reporting</h3>
+                        <p>Complex SQL query writing, view creation, stored procedures, and ERP database data extraction routines.</p>
+                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20need%20SQL%20Reporting%20services." target="_blank" class="service-cta"><span>Request Service</span> <i data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card tilt-card">
+                        <div class="service-icon"><i data-lucide="file-spreadsheet"></i></div>
+                        <h3>Excel Automation</h3>
+                        <p>VBA Macros, automated financial & operational workbooks, rate sheet generators, and error-free templates.</p>
+                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20need%20Excel%20Automation%20services." target="_blank" class="service-cta"><span>Request Service</span> <i data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card tilt-card">
+                        <div class="service-icon"><i data-lucide="refresh-cw"></i></div>
+                        <h3>Power Query</h3>
+                        <p>Advanced M-code data cleaning, multi-source data merging, and automated ETL transformation flows.</p>
+                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20need%20Power%20Query%20ETL%20services." target="_blank" class="service-cta"><span>Request Service</span> <i data-lucide="arrow-right"></i></a>
+                    </div>
+
                     <div class="service-card tilt-card">
                         <div class="service-icon"><i data-lucide="cpu"></i></div>
-                        <h3>Low-Code Factory Automation (Power Apps & Cloud Flows)</h3>
-                        <p class="service-desc">Building custom canvas and model-driven Microsoft Power Apps and automated cloud flows that digitize paper vouchers, eliminate audit discrepancies, and streamline worker payments.</p>
-                        <div class="service-tags">
-                            <span class="tag-pill">Power Apps</span>
-                            <span class="tag-pill">Power Automate</span>
-                            <span class="tag-pill">Voucher Automation</span>
-                            <span class="tag-pill">Zero Discrepancy</span>
-                        </div>
-                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20am%20interested%20in%20your%20Low-Code%20Factory%20Automation%20services." target="_blank" class="service-cta">
-                            <span>Request Consultation</span>
-                            <i data-lucide="arrow-right"></i>
-                        </a>
+                        <h3>ERP Reporting Integration</h3>
+                        <p>Connecting ERP databases into custom visual reporting layers for seamless management auditing.</p>
+                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20need%20ERP%20Reporting%20Integration." target="_blank" class="service-cta"><span>Request Service</span> <i data-lucide="arrow-right"></i></a>
                     </div>
 
-                    <!-- Service 3 -->
                     <div class="service-card tilt-card">
-                        <div class="service-icon"><i data-lucide="git-branch"></i></div>
-                        <h3>Enterprise Organogram Architecture (MS Visio)</h3>
-                        <p class="service-desc">Designing comprehensive company-wide organizational charts, reporting hierarchies, and departmental manpower requirement charts in MS Visio across production and support units.</p>
-                        <div class="service-tags">
-                            <span class="tag-pill">MS Visio</span>
-                            <span class="tag-pill">Reporting Hierarchies</span>
-                            <span class="tag-pill">Organogram Design</span>
-                            <span class="tag-pill">Manpower Planning</span>
-                        </div>
-                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20am%20interested%20in%20your%20Enterprise%20Organogram%20Architecture%20services." target="_blank" class="service-cta">
-                            <span>Request Consultation</span>
-                            <i data-lucide="arrow-right"></i>
-                        </a>
-                    </div>
-
-                    <!-- Service 4 -->
-                    <div class="service-card tilt-card">
-                        <div class="service-icon"><i data-lucide="file-text"></i></div>
-                        <h3>SOP & Job Description (JD) Formulation</h3>
-                        <p class="service-desc">Authoring, reviewing, and standardizing operational Standard Operating Procedures (SOPs) and technical Job Descriptions (JDs) across factory departments for process governance.</p>
-                        <div class="service-tags">
-                            <span class="tag-pill">SOP Authoring</span>
-                            <span class="tag-pill">JD Formulation</span>
-                            <span class="tag-pill">Process Governance</span>
-                            <span class="tag-pill">Standardization</span>
-                        </div>
-                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20am%20interested%20in%20your%20SOP%20%26%20JD%20Formulation%20services." target="_blank" class="service-cta">
-                            <span>Request Consultation</span>
-                            <i data-lucide="arrow-right"></i>
-                        </a>
-                    </div>
-
-                    <!-- Service 5 -->
-                    <div class="service-card tilt-card">
-                        <div class="service-icon"><i data-lucide="video"></i></div>
-                        <h3>Creative Media & Brand Design (Video, Photo & Logo)</h3>
-                        <p class="service-desc">Professional video editing (Adobe Premiere Pro CC), digital media color grading & retouching (Adobe Lightroom), and corporate logo & visual brand identity design.</p>
-                        <div class="service-tags">
-                            <span class="tag-pill">Premiere Pro CC</span>
-                            <span class="tag-pill">Adobe Lightroom</span>
-                            <span class="tag-pill">Video Operations</span>
-                            <span class="tag-pill">Logo Design</span>
-                        </div>
-                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20am%20interested%20in%20your%20Creative%20Media%20%26%20Brand%20Design%20services." target="_blank" class="service-cta">
-                            <span>Request Consultation</span>
-                            <i data-lucide="arrow-right"></i>
-                        </a>
+                        <div class="service-icon"><i data-lucide="eye"></i></div>
+                        <h3>Data Visualization</h3>
+                        <p>Transforming complex datasets into executive presentation decks, interactive charts, and clear infographics.</p>
+                        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20need%20Data%20Visualization%20services." target="_blank" class="service-cta"><span>Request Service</span> <i data-lucide="arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 6: Visual Portfolio -->
-        <section class="section alt-bg" id="visuals">
+        <!-- SECTION 7: Technology Stack (Professional Grid) -->
+        <section class="section alt-bg" id="technology">
             <div class="container">
-                <h2 class="section-title">Visual <span class="accent">Portfolio</span></h2>
-                <p class="section-subtitle">High-impact previews of industrial costing reports and digital automation flows.</p>
+                <h2 class="section-title">Technology <span class="accent">Stack</span></h2>
+                <p class="section-subtitle">Core technical arsenal powering analytics, data pipelines, and factory automations.</p>
 
-                <div class="filter-tabs">
-                    <button class="filter-btn active" data-vis-filter="all">All Previews</button>
-                    <button class="filter-btn" data-vis-filter="costing">Costing & Analytics</button>
-                    <button class="filter-btn" data-vis-filter="automation">Process Automation</button>
-                </div>
-
-                <div class="visuals-grid">
-                    <!-- Item 1: Costing & SAM Analytics -->
-                    <div class="visual-item tilt-card" data-vis-cat="costing">
-                        <div class="visual-img-box lightbox-trigger" data-full-img="assets/costing_preview.jpg" data-caption="Industrial Costing & SAM Validation Analytics — Buyer Cost Sheets & Rate Lists">
-                            <img src="assets/costing_preview.jpg" alt="Industrial Costing Analytics Sheet" class="visual-img">
-                            <div class="img-zoom-hint"><i data-lucide="maximize-2"></i> Click to Enlarge</div>
-                        </div>
-                        <div class="visual-content">
-                            <h3>Industrial Costing & SAM Validation Analytics</h3>
-                            <p>Comprehensive cut-to-pack cost analysis evaluating machinery, manpower allocation, order booking, sewing operations, dispatch cost-per-piece (CPP), and floor deficit metrics.</p>
-                        </div>
+                <div class="tech-stack-grid">
+                    <div class="tech-stack-card tilt-card">
+                        <i data-lucide="bar-chart-2" class="tech-icon"></i>
+                        <h4>Power BI</h4>
+                        <p>DAX, Data Modeling & Visualization</p>
                     </div>
-
-                    <!-- Item 2: Process Automation Flow -->
-                    <div class="visual-item tilt-card" data-vis-cat="automation">
-                        <div class="visual-img-box lightbox-trigger" data-full-img="assets/automation_preview.jpg" data-caption="Digital Factory Voucher Validation — Low-Code Process Workflow">
-                            <img src="assets/automation_preview.jpg" alt="Digital Factory Voucher Validation Flow" class="visual-img">
-                            <div class="img-zoom-hint"><i data-lucide="maximize-2"></i> Click to Enlarge</div>
-                        </div>
-                        <div class="visual-content">
-                            <h3>Digital Voucher & Wage Process Automation</h3>
-                            <p>From manual paper vouchers to 100% automated digital validation flows—eliminating wage audit discrepancies and operational delay.</p>
-                        </div>
+                    <div class="tech-stack-card tilt-card">
+                        <i data-lucide="database" class="tech-icon"></i>
+                        <h4>SQL</h4>
+                        <p>Queries, Views & ERP Extraction</p>
+                    </div>
+                    <div class="tech-stack-card tilt-card">
+                        <i data-lucide="file-spreadsheet" class="tech-icon"></i>
+                        <h4>Excel</h4>
+                        <p>VBA, Macros & Modeling</p>
+                    </div>
+                    <div class="tech-stack-card tilt-card">
+                        <i data-lucide="refresh-cw" class="tech-icon"></i>
+                        <h4>Power Query</h4>
+                        <p>M-Code & ETL Data Pipelines</p>
+                    </div>
+                    <div class="tech-stack-card tilt-card">
+                        <i data-lucide="code-2" class="tech-icon"></i>
+                        <h4>Python</h4>
+                        <p>Data Processing & Scripting</p>
+                    </div>
+                    <div class="tech-stack-card tilt-card">
+                        <i data-lucide="calculator" class="tech-icon"></i>
+                        <h4>DAX</h4>
+                        <p>Advanced Time-Intelligence Measures</p>
+                    </div>
+                    <div class="tech-stack-card tilt-card">
+                        <i data-lucide="layers" class="tech-icon"></i>
+                        <h4>ERP Systems</h4>
+                        <p>Factory Floor Database Streams</p>
+                    </div>
+                    <div class="tech-stack-card tilt-card">
+                        <i data-lucide="cpu" class="tech-icon"></i>
+                        <h4>RFID</h4>
+                        <p>Real-Time Hanger Line Tracking</p>
+                    </div>
+                    <div class="tech-stack-card tilt-card">
+                        <i data-lucide="git-branch" class="tech-icon"></i>
+                        <h4>Git</h4>
+                        <p>Version Control & Code Repos</p>
+                    </div>
+                    <div class="tech-stack-card tilt-card">
+                        <i data-lucide="file-code" class="tech-icon"></i>
+                        <h4>HTML5</h4>
+                        <p>Web Layouts & Dashboard Embeds</p>
+                    </div>
+                    <div class="tech-stack-card tilt-card">
+                        <i data-lucide="palette" class="tech-icon"></i>
+                        <h4>CSS3</h4>
+                        <p>Glassmorphism & Dashboard UI</p>
+                    </div>
+                    <div class="tech-stack-card tilt-card">
+                        <i data-lucide="terminal" class="tech-icon"></i>
+                        <h4>JavaScript</h4>
+                        <p>Web Interactivity & UI Logic</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 6.6: Leadership & Testimonials (Directive #7) -->
-        <section class="section alt-bg" id="testimonials">
+        <!-- SECTION 8: Why Hire Me? -->
+        <section class="section" id="why-hire-me">
+            <div class="container">
+                <h2 class="section-title">Why <span class="accent">Hire Me?</span></h2>
+                <p class="section-subtitle">Combining rare domain expertise in manufacturing with cutting-edge data engineering.</p>
+
+                <div class="why-grid">
+                    <div class="why-card tilt-card">
+                        <div class="why-icon"><i data-lucide="factory"></i></div>
+                        <h3>Manufacturing Experience</h3>
+                        <p>Understanding real shop floor production dynamics, SAM rates, and line balancing is fundamentally different from simply reading data. 6+ years in textile & footwear manufacturing.</p>
+                    </div>
+                    <div class="why-card tilt-card">
+                        <div class="why-icon"><i data-lucide="target"></i></div>
+                        <h3>Business Understanding</h3>
+                        <p>I solve core business problems rather than simply building reports. My solutions focus on reducing costs, protecting CPP profit margins, and eliminating operational delays.</p>
+                    </div>
+                    <div class="why-card tilt-card">
+                        <div class="why-icon"><i data-lucide="cpu"></i></div>
+                        <h3>Technical Expertise</h3>
+                        <p>Deep technical command across Power BI, DAX, SQL queries, Power Query ETL, Excel VBA, Power Apps, and live ERP database integration.</p>
+                    </div>
+                    <div class="why-card tilt-card">
+                        <div class="why-icon"><i data-lucide="trending-up"></i></div>
+                        <h3>Process Improvement</h3>
+                        <p>Blending proven Industrial Engineering methodologies (Work Study, SAM, OBs, Line Balancing) with automated Business Intelligence systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 9: Career Timeline -->
+        <section class="section alt-bg" id="career">
+            <div class="container">
+                <h2 class="section-title">Career <span class="accent">Timeline & Growth</span></h2>
+                <p class="section-subtitle">6+ years of promotional progression across leading textile & footwear manufacturing operations.</p>
+
+                <div class="career-flow-wrapper">
+                    <div class="career-step tilt-card">
+                        <span class="step-num">01</span>
+                        <h4>Executive IE</h4>
+                        <p class="step-company">Firhaj Footwear (2020 – 2021)</p>
+                        <p class="step-desc">OB development, cost-per-minute analysis, SAM verification, and floor efficiency audits.</p>
+                    </div>
+                    <div class="career-arrow"><i data-lucide="arrow-right"></i></div>
+                    
+                    <div class="career-step tilt-card">
+                        <span class="step-num">02</span>
+                        <h4>Senior Officer</h4>
+                        <p class="step-company">Combined Fabrics Ltd (2021 – Present)</p>
+                        <p class="step-desc">4x promotion track across Combined Fabrics Ltd. Cut-to-pack costing, Visio Organograms, and SOP/JD authoring.</p>
+                    </div>
+                    <div class="career-arrow"><i data-lucide="arrow-right"></i></div>
+
+                    <div class="career-step tilt-card">
+                        <span class="step-num">03</span>
+                        <h4>Business Intelligence</h4>
+                        <p class="step-company">Power BI & DAX Architecture</p>
+                        <p class="step-desc">Building executive dashboards streaming real-time OEE, line balance, and output metrics.</p>
+                    </div>
+                    <div class="career-arrow"><i data-lucide="arrow-right"></i></div>
+
+                    <div class="career-step tilt-card">
+                        <span class="step-num">04</span>
+                        <h4>Data Analytics</h4>
+                        <p class="step-company">SQL & Power Query ETL</p>
+                        <p class="step-desc">Database extraction, data cleaning routines, and automated Excel VBA workbooks.</p>
+                    </div>
+                    <div class="career-arrow"><i data-lucide="arrow-right"></i></div>
+
+                    <div class="career-step tilt-card active-step">
+                        <span class="step-num">05</span>
+                        <h4>Manufacturing Intelligence Specialist</h4>
+                        <p class="step-company">Hybrid Niche Specialization</p>
+                        <p class="step-desc">Transforming raw shop floor data into strategic business decisions with zero discrepancy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 10: Leadership & Testimonials -->
+        <section class="section" id="testimonials">
             <div class="container">
                 <h2 class="section-title">Leadership & <span class="accent">Testimonials</span></h2>
                 <p class="section-subtitle">Endorsements and feedback from operations managers, executive leaders, and industry colleagues.</p>
 
-                <div class="projects-grid">
-                    <div class="project-card tilt-card">
-                        <div class="project-content" style="padding: 1.8rem;">
-                            <div style="color: var(--accent); margin-bottom: 0.8rem;"><i data-lucide="quote" style="width: 28px; height: 28px;"></i></div>
-                            <p style="font-style: italic; color: var(--text-primary); font-size: 0.92rem; line-height: 1.6; margin-bottom: 1.2rem;">
-                                "Zaigham transformed our shop floor reporting at Combined Fabrics Ltd. His Power BI dashboards gave us 100% real-time line visibility and reduced our daily reporting lag by 80%. His technical precision is unmatched."
-                            </p>
-                            <div style="font-weight: 700; color: var(--accent); font-size: 0.95rem;">Operations Manager</div>
-                            <div style="font-size: 0.8rem; color: var(--text-secondary);">Combined Fabrics Limited — Lahore</div>
+                <div class="testimonials-grid-4">
+                    <div class="testi-card tilt-card">
+                        <div class="testi-quote-icon"><i data-lucide="quote"></i></div>
+                        <p class="testi-text">
+                            "Zaigham transformed our shop floor reporting at Combined Fabrics Ltd. His Power BI dashboards gave us 100% real-time line visibility and reduced our daily reporting lag by 80%. His technical precision is unmatched."
+                        </p>
+                        <div class="testi-author">
+                            <span class="author-name">Operations Manager</span>
+                            <span class="author-role">Combined Fabrics Limited — Lahore</span>
                         </div>
                     </div>
 
-                    <div class="project-card tilt-card">
-                        <div class="project-content" style="padding: 1.8rem;">
-                            <div style="color: var(--accent); margin-bottom: 0.8rem;"><i data-lucide="quote" style="width: 28px; height: 28px;"></i></div>
-                            <p style="font-style: italic; color: var(--text-primary); font-size: 0.92rem; line-height: 1.6; margin-bottom: 1.2rem;">
-                                "An exceptional Industrial Engineer who seamlessly bridges complex SAM costing with low-code Power Platform apps. His rate validation engine eliminated payment discrepancies completely."
-                            </p>
-                            <div style="font-weight: 700; color: var(--accent); font-size: 0.95rem;">Senior IE Manager</div>
-                            <div style="font-size: 0.8rem; color: var(--text-secondary);">Firhaj Footwear — Lahore</div>
+                    <div class="testi-card tilt-card">
+                        <div class="testi-quote-icon"><i data-lucide="quote"></i></div>
+                        <p class="testi-text">
+                            "An exceptional Industrial Engineer who seamlessly bridges complex SAM costing with low-code Power Platform apps. His rate validation engine eliminated payment discrepancies completely."
+                        </p>
+                        <div class="testi-author">
+                            <span class="author-name">Senior IE Manager</span>
+                            <span class="author-role">Firhaj Footwear — Lahore</span>
                         </div>
                     </div>
 
-                    <div class="project-card tilt-card">
-                        <div class="project-content" style="padding: 1.8rem;">
-                            <div style="color: var(--accent); margin-bottom: 0.8rem;"><i data-lucide="quote" style="width: 28px; height: 28px;"></i></div>
-                            <p style="font-style: italic; color: var(--text-primary); font-size: 0.92rem; line-height: 1.6; margin-bottom: 1.2rem;">
-                                "Zaigham standardized over 3,400+ operations across our factory floors with extreme discipline and zero voucher error. His Hifz-e-Quran foundation shows in his focus and personal integrity."
-                            </p>
-                            <div style="font-weight: 700; color: var(--accent); font-size: 0.95rem;">General Manager Operations</div>
-                            <div style="font-size: 0.8rem; color: var(--text-secondary);">Apparel Manufacturing Division</div>
+                    <div class="testi-card tilt-card">
+                        <div class="testi-quote-icon"><i data-lucide="quote"></i></div>
+                        <p class="testi-text">
+                            "Zaigham standardized over 3,400+ operations across our factory floors with extreme discipline and zero voucher error. His Hifz-e-Quran foundation shows in his focus and personal integrity."
+                        </p>
+                        <div class="testi-author">
+                            <span class="author-name">General Manager Operations</span>
+                            <span class="author-role">Apparel Manufacturing Division</span>
+                        </div>
+                    </div>
+
+                    <div class="testi-card tilt-card">
+                        <div class="testi-quote-icon"><i data-lucide="quote"></i></div>
+                        <p class="testi-text">
+                            "One of the rarest professionals in textile manufacturing—combining deep floor IE knowledge with SQL database extraction, Excel automation, and Power BI dashboard development."
+                        </p>
+                        <div class="testi-author">
+                            <span class="author-name">LinkedIn Recommendation</span>
+                            <span class="author-role">Senior Industry Colleague</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 8: Education & Certifications -->
-        <section class="section alt-bg" id="education">
+        <!-- SECTION 11: Education & Certifications -->
+        <section class="section alt-bg" id="certifications">
             <div class="container">
-                <h2 class="section-title">Education & <span class="accent">Growth</span></h2>
-                <p class="section-subtitle">Academic foundations, technical credentials, and continuous learning trajectory.</p>
+                <h2 class="section-title">Certifications & <span class="accent">Education</span></h2>
+                <p class="section-subtitle">Academic degrees, technical credentials, and continuous learning track.</p>
 
-                <div class="education-timeline">
-                    <div class="edu-item">
-                        <span class="year">In Progress</span>
-                        <h3>BS in Information Technology</h3>
-                        <p>Virtual University — Specializing in Enterprise Data Systems, Software Engineering & IT Infrastructure.</p>
+                <div class="cert-grid-6">
+                    <div class="cert-card tilt-card">
+                        <div class="cert-icon"><i data-lucide="award"></i></div>
+                        <h4>Microsoft Power Platform Developer</h4>
+                        <p>Certified Power BI, Power Apps & Cloud Automation</p>
                     </div>
-                    <div class="edu-item">
-                        <span class="year">Technical Diploma</span>
-                        <h3>Diploma of Associate Engineering (DAE) — Electrical</h3>
-                        <p>Punjab Board of Technical Education & Management — Industrial Systems Control & Hardware Engineering.</p>
+                    <div class="cert-card tilt-card">
+                        <div class="cert-icon"><i data-lucide="database"></i></div>
+                        <h4>SQL & Data Modeling</h4>
+                        <p>Database Queries, Relational Schemas & DAX</p>
                     </div>
-                    <div class="edu-item">
-                        <span class="year">Secondary Education</span>
-                        <h3>Matriculation (Science)</h3>
-                        <p>Board of Intermediate & Secondary Education (BISE), Lahore</p>
+                    <div class="cert-card tilt-card">
+                        <div class="cert-icon"><i data-lucide="settings"></i></div>
+                        <h4>Industrial Engineering & SAM Costing</h4>
+                        <p>Work Study, OB Formulation & CPP Analysis</p>
                     </div>
-                    <div class="edu-item">
-                        <span class="year">Core Values & Mental Discipline</span>
-                        <h3>Hifz-e-Quran</h3>
-                        <p>IQRA School — Cultivating exceptional memory, focus, discipline, and uncompromising personal integrity.</p>
+                    <div class="cert-card tilt-card">
+                        <div class="cert-icon"><i data-lucide="file-spreadsheet"></i></div>
+                        <h4>Advanced Excel & VBA Automation</h4>
+                        <p>Macros, Power Query & Analytical Modeling</p>
+                    </div>
+                    <div class="cert-card tilt-card">
+                        <div class="cert-icon"><i data-lucide="trending-up"></i></div>
+                        <h4>Lean Manufacturing & Continuous Improvement</h4>
+                        <p>5S, OEE Optimization & Line Balancing</p>
+                    </div>
+                    <div class="cert-card tilt-card">
+                        <div class="cert-icon"><i data-lucide="graduation-cap"></i></div>
+                        <h4>BS in Information Technology (In Progress)</h4>
+                        <p>Virtual University — Enterprise Systems & IT Infrastructure</p>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Certifications Grid -->
-                <div class="cert-section">
-                    <h3 class="section-title sm" style="font-size: 2rem; margin-bottom: 2rem;">Key <span class="accent">Certifications</span></h3>
-                    
-                    <div class="cert-grid">
-                        <div class="cert-card tilt-card">
-                            <div class="cert-icon"><i data-lucide="database"></i></div>
-                            <h4>Microsoft Power Platform Developer</h4>
-                            <p>Power BI, Power Apps, Power Automate & Power Pages</p>
+        <!-- SECTION 12: Frequently Asked Questions (FAQ) -->
+        <section class="section" id="faq">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked <span class="accent">Questions</span></h2>
+                <p class="section-subtitle">Common queries from factory owners, recruiters, and prospective clients.</p>
+
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What industries do you work with?</h4>
+                            <i data-lucide="chevron-down" class="faq-icon"></i>
                         </div>
-                        <div class="cert-card tilt-card">
-                            <div class="cert-icon"><i data-lucide="file-spreadsheet"></i></div>
-                            <h4>Advanced Excel Mastery</h4>
-                            <p>Macros, VBA & Advanced Data Analysis</p>
+                        <div class="faq-answer">
+                            <p>I specialize primarily in <strong>Textile Manufacturing, Garments, Apparel Exporters, Footwear</strong>, and general industrial manufacturing plants. My solutions also apply seamlessly to retail and supply chain operations requiring data automation.</p>
                         </div>
-                        <div class="cert-card tilt-card">
-                            <div class="cert-icon"><i data-lucide="award"></i></div>
-                            <h4>Zero to Hero in Microsoft Excel</h4>
-                            <p>Data Extraction & Financial Modeling</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Can you build custom Power BI dashboards for our factory?</h4>
+                            <i data-lucide="chevron-down" class="faq-icon"></i>
                         </div>
-                        <div class="cert-card tilt-card">
-                            <div class="cert-icon"><i data-lucide="video"></i></div>
-                            <h4>Adobe Premiere Pro CC</h4>
-                            <p>Professional Video Operations & Presentation</p>
+                        <div class="faq-answer">
+                            <p>Yes. I design end-to-end custom Power BI dashboards with DAX measures, automated Power Query ETL pipelines, and live database/ERP connections to track real-time OEE, line balance, daily output targets, and costing.</p>
                         </div>
-                        <div class="cert-card tilt-card">
-                            <div class="cert-icon"><i data-lucide="image"></i></div>
-                            <h4>Adobe Lightroom</h4>
-                            <p>Digital Media Visualization & Media Design</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Do you automate complex Excel reports and workbooks?</h4>
+                            <i data-lucide="chevron-down" class="faq-icon"></i>
                         </div>
-                        <div class="cert-card tilt-card">
-                            <div class="cert-icon"><i data-lucide="network"></i></div>
-                            <h4>Cisco Networking Labs</h4>
-                            <p>Practical Packet Tracer Configuration & Subnetting</p>
+                        <div class="faq-answer">
+                            <p>Absolutely. I use VBA Macros, Power Query ETL routines, and dynamic Excel modeling to eliminate manual copy-pasting, automate payment/voucher logging, and generate 100% error-free financial & operational reports.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Can you optimize existing manufacturing reports and SAM rate sheets?</h4>
+                            <i data-lucide="chevron-down" class="faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes. Combining Industrial Engineering methodologies with BI, I perform SAM validation, standardize operation names/rates (over 3,400+ operations standardized), and optimize direct/indirect labor ratios to lower Cost Per Piece (CPP).</p>
                         </div>
                     </div>
                 </div>
@@ -846,19 +904,21 @@
         </section>
     </main>
 
-    <!-- Footer & Contact -->
+    <!-- SECTION 13: Footer & Contact -->
     <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h2 style="font-size: 2.2rem; margin-bottom: 0.6rem;">Ready to automate <span class="accent">your reports?</span></h2>
-                    <p style="font-size: 1.1rem; color: var(--accent); font-weight: 600; margin-bottom: 1rem;">Let's discuss your project.</p>
-                    <p>Industrial Engineer & Business Intelligence Developer | 6+ Years Experience in Textile Manufacturing, Power BI, SQL & Low-Code Automations.</p>
+                    <h2 style="font-size: 2rem; margin-bottom: 0.6rem;">Let's Build Better <span class="accent">Manufacturing Systems Together</span></h2>
+                    <p style="font-size: 1.1rem; color: var(--accent); font-weight: 600; margin-bottom: 1rem;">
+                        Need dashboards? Need automation? Need reporting? Need KPI monitoring? Let's discuss your project.
+                    </p>
+                    <p>Manufacturing Intelligence Specialist | Industrial Engineer | Business Intelligence Developer</p>
                     <p style="margin-top: 0.8rem; color: var(--text-muted); font-size: 0.9rem;"><i data-lucide="map-pin"></i> 20KM Ferozpur Road, Dullukhurd, Lahore, Pakistan</p>
                 </div>
 
                 <div class="quick-contact-box">
-                    <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20am%20ready%20to%20automate%20my%20reports%20and%20discuss%20a%20project." target="_blank" class="contact-action-btn">
+                    <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20am%20ready%20to%20discuss%20a%20manufacturing%20data%20project." target="_blank" class="contact-action-btn">
                         <div class="contact-left">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent); flex-shrink: 0;"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>
                             <span>WhatsApp: +92-321-2095794</span>
@@ -881,10 +941,25 @@
                         </div>
                         <span class="copy-badge">Connect</span>
                     </a>
+
+                    <a href="https://drive.google.com/file/d/1ow1c3HYK9AlvkLf7duqwFMT9_dZbtBvE/view?usp=sharing" target="_blank" class="contact-action-btn">
+                        <div class="contact-left">
+                            <i data-lucide="file-down"></i>
+                            <span>Download Official Resume</span>
+                        </div>
+                        <span class="copy-badge">PDF Link</span>
+                    </a>
                 </div>
             </div>
 
             <div class="footer-bottom">
+                <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.4rem;">Hafiz Muhammad Zaigham Latif</div>
+                <div style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 0.8rem;">
+                    Manufacturing Intelligence Specialist • Industrial Engineer • Business Intelligence Developer
+                </div>
+                <div style="font-size: 0.85rem; color: var(--accent); margin-bottom: 1rem;">
+                    Power BI • SQL • Excel • ERP • RFID
+                </div>
                 <p>&copy; 2026 Hafiz Muhammad Zaigham Latif. All Rights Reserved.</p>
             </div>
         </div>
@@ -899,103 +974,18 @@
         </div>
     </div>
 
-    <!-- Back to Top Floating Button -->
-    <button class="back-to-top" id="back-to-top" title="Back to Top">
-        <i data-lucide="chevron-up"></i>
-    </button>
-
-    <!-- Sticky Floating Quick-Connect Bar -->
-    <div class="floating-quick-connect" id="floating-connect">
-        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="float-btn whatsapp" title="Chat on WhatsApp">
-            <i data-lucide="message-square"></i>
-        </a>
-        <a href="mailto:hafizzaigham9@gmail.com" class="float-btn email" title="Send Mail">
-            <i data-lucide="mail"></i>
-        </a>
-        <a href="https://drive.google.com/file/d/1ow1c3HYK9AlvkLf7duqwFMT9_dZbtBvE/view?usp=sharing" target="_blank" class="float-btn cv" title="Download CV">
-            <i data-lucide="file-text"></i>
-        </a>
-    </div>
-    <!-- Interactive Resume Preview Modal -->
-    <div id="resume-modal" class="resume-modal">
-        <div class="resume-modal-container">
+    <!-- Case Study Detail Modal -->
+    <div id="case-study-modal" class="resume-modal">
+        <div class="resume-modal-container" style="max-width: 850px;">
             <div class="resume-modal-header">
                 <div style="display: flex; align-items: center; gap: 0.8rem;">
-                    <i data-lucide="file-text" style="color: var(--accent);"></i>
-                    <h3 style="font-size: 1.1rem; color: var(--text-primary);">Hafiz Muhammad Zaigham Latif — Official Resume</h3>
+                    <i data-lucide="bar-chart-2" style="color: var(--accent);"></i>
+                    <h3 id="cs-modal-title" style="font-size: 1.1rem; color: var(--text-primary);">Case Study Details</h3>
                 </div>
-                <div style="display: flex; gap: 0.8rem; align-items: center;">
-                    <button class="btn-primary" onclick="window.print()" style="padding: 0.4rem 1rem; font-size: 0.82rem;"><i data-lucide="printer"></i> Print / Save PDF</button>
-                    <button class="resume-close-btn" id="close-resume-btn">&times;</button>
-                </div>
+                <button class="resume-close-btn" id="close-cs-modal-btn">&times;</button>
             </div>
-            
-            <div class="resume-modal-body">
-                <div class="resume-paper">
-                    <header class="res-header">
-                        <h1>HAFIZ MUHAMMAD ZAIGHAM LATIF</h1>
-                        <p class="res-subtitle">Senior Officer — Industrial Engineering & Data Analytics</p>
-                        <div class="res-contact">
-                            <span>📍 20KM Ferozpur Road, Dullukhurd, Lahore, Pakistan</span> | 
-                            <span>📧 hafizzaigham9@gmail.com</span> | 
-                            <span>📞 +92-321-2095794</span>
-                        </div>
-                    </header>
-
-                    <section class="res-section">
-                        <h2>PROFESSIONAL SUMMARY</h2>
-                        <p>Results-driven Industrial Engineering and Data Analytics professional with 6+ years of experience in textile and apparel manufacturing. Proven expertise in data extraction, visualization, and process optimization, with strong command over Power BI, Power Query, and Excel. Highly skilled in Work Study, SAM analysis, costing, operation breakdowns, wage structures, SOP & JD formulation, and production planning. Standardized 34,000+ operations to drive continuous improvement, reduce cost per piece, and eliminate voucher discrepancies.</p>
-                    </section>
-
-                    <section class="res-section">
-                        <h2>PROFESSIONAL EXPERIENCE</h2>
-                        <div class="res-job">
-                            <div class="res-job-title">Combined Fabrics Limited – Lahore, Pakistan</div>
-                            <div class="res-role">Senior Officer — IE & Data Analytics <span>(Oct 2023 – Present)</span></div>
-                            <ul>
-                                <li>Prepared and analyzed cut-to-pack actual and tentative costing for buyer submissions and strategic pricing.</li>
-                                <li>Architected and mapped comprehensive company-wide Organizational Structures (Organograms) and Reporting Hierarchies using MS Visio.</li>
-                                <li>Authored, reviewed, and standardized SOPs for operational processes and JDs for technical designations across departments.</li>
-                                <li>Standardized over 3,400+ factory operations, rates, and remarks, reducing voucher discrepancies to zero.</li>
-                                <li>Monitored overtime trends and direct vs. indirect labor ratios to optimize manpower allocation and Cost per Product (CPP).</li>
-                                <li>Conducted SAM validations and administered updated rate lists and SAM sheets for accurate floor management.</li>
-                                <li>Led weekly and monthly executive risk analysis meetings, developing Power BI dashboards to support strategic decision-making.</li>
-                            </ul>
-                            
-                            <div class="res-role" style="margin-top: 0.6rem;">Officer <span>(Jul 2022 – Sep 2023)</span></div>
-                            <ul><li>Delivered analytical presentations to senior management and calibrated new INA Hanger Line structures.</li></ul>
-
-                            <div class="res-role" style="margin-top: 0.6rem;">Work Study Officer <span>(Jun 2021 – Jun 2022)</span></div>
-                            <ul><li>Created standardized Excel reports, collaborated with ERP teams, and established departmental KPI frameworks.</li></ul>
-
-                            <div class="res-role" style="margin-top: 0.6rem;">Computer Operator <span>(Nov 2018 – Oct 2020)</span></div>
-                            <ul><li>Managed INA Hanger System operations, verified barcode scans, and processed operator payments.</li></ul>
-                        </div>
-
-                        <div class="res-job">
-                            <div class="res-job-title">Firhaj Footwear – Lahore, Pakistan</div>
-                            <div class="res-role">Industrial Engineering Officer <span>(Nov 2020 – May 2021)</span></div>
-                            <ul>
-                                <li>Developed Operational Bulletins (OBs), conducted cost-per-minute analysis, and verified SAM calculations.</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <section class="res-section">
-                        <h2>TECHNICAL SKILLS & CERTIFICATIONS</h2>
-                        <p><strong>Analytics & BI:</strong> Power BI, Power Query, MS Excel (VBA/Macros), DAX, SQL Logic, Tableau</p>
-                        <p><strong>Power Platform:</strong> Power Apps (Canvas & Model-Driven), Power Automate, Power Pages, ERP Systems, RFID Integration</p>
-                        <p><strong>IE & Governance:</strong> Work Study, SAM Validation, Cut-to-Pack Costing, OB Development, SOP & JD Formulation, INA Hanger Lines</p>
-                        <p><strong>Certifications:</strong> Microsoft Power Platform Developer, Advanced Excel Mastery, Zero to Hero MS Excel, Adobe Premiere Pro & Lightroom, Cisco Networking Labs</p>
-                    </section>
-
-                    <section class="res-section">
-                        <h2>EDUCATION</h2>
-                        <p><strong>BS in Information Technology (In Progress)</strong> — Virtual University</p>
-                        <p><strong>Diploma of Associate Engineering (DAE) Electrical</strong> — Punjab Board of Technical Education</p>
-                        <p><strong>Hifz-e-Quran</strong> — IQRA School (Discipline, Memory, Integrity)</p>
-                    </section>
-                </div>
+            <div class="resume-modal-body" id="cs-modal-body">
+                <!-- Case study details populated by JS -->
             </div>
         </div>
     </div>
@@ -1018,7 +1008,7 @@
                 <div class="resume-paper">
                     <header class="res-header">
                         <h1>HAFIZ MUHAMMAD ZAIGHAM LATIF</h1>
-                        <p class="res-subtitle">Executive One-Pager Summary | Senior IE & Data Analytics Specialist</p>
+                        <p class="res-subtitle">Manufacturing Intelligence Specialist | Industrial Engineer | BI Developer</p>
                         <div class="res-contact">
                             <span>📍 Lahore, Pakistan</span> | <span>📧 hafizzaigham9@gmail.com</span> | <span>📞 +92-321-2095794</span>
                         </div>
@@ -1043,7 +1033,7 @@
                     <section class="res-section">
                         <h2>CORE COMPETENCIES & TOOLKIT</h2>
                         <p><strong>Data & BI:</strong> Power BI, Power Query, MS Excel (VBA/Macros), DAX, SQL Logic, Executive Dashboards</p>
-                        <p><strong>Low-Code Development:</strong> Power Apps (Canvas/Model-Driven), Power Automate, Power Pages, RFID & ERP Integration</p>
+                        <p><strong>Low-Code Development:</strong> Power Apps (Canvas & Model-Driven), Power Automate, Power Pages, RFID & ERP Integration</p>
                         <p><strong>Industrial Engineering:</strong> Work Study, SAM Validation, Cut-to-Pack Costing, OB Development, SOP & JD Formulation, INA Hanger Lines</p>
                         <p><strong>Certifications:</strong> Microsoft Power Platform Developer, Advanced Excel Mastery, Cisco Networking Labs</p>
                     </section>
@@ -1055,6 +1045,24 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Back to Top Floating Button -->
+    <button class="back-to-top" id="back-to-top" title="Back to Top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <!-- Sticky Floating Quick-Connect Bar -->
+    <div class="floating-quick-connect" id="floating-connect">
+        <a href="https://wa.me/923212095794?text=Hi%20Zaigham%2C%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="float-btn whatsapp" title="Chat on WhatsApp">
+            <i data-lucide="message-square"></i>
+        </a>
+        <a href="mailto:hafizzaigham9@gmail.com" class="float-btn email" title="Send Mail">
+            <i data-lucide="mail"></i>
+        </a>
+        <a href="https://drive.google.com/file/d/1ow1c3HYK9AlvkLf7duqwFMT9_dZbtBvE/view?usp=sharing" target="_blank" class="float-btn cv" title="Download CV">
+            <i data-lucide="file-text"></i>
+        </a>
     </div>
 
     <!-- Scripts -->
