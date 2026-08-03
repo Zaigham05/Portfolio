@@ -77,21 +77,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 const totalSteps = duration / stepTime;
                 const increment = target / totalSteps;
 
+                const suffix = el.getAttribute('data-suffix') || '';
+
                 const timer = setInterval(() => {
                     current += increment;
                     if (current >= target) {
                         current = target;
                         clearInterval(timer);
                     }
-                    if (target === 0) {
-                        el.textContent = '0%';
-                    } else if (target >= 1000) {
-                        el.textContent = Math.floor(current).toLocaleString() + '+';
-                    } else if (target === 15 || target === 6) {
-                        el.textContent = Math.floor(current) + '+';
-                    } else {
-                        el.textContent = Math.floor(current) + '%';
-                    }
+                    el.textContent = Math.floor(current).toLocaleString() + suffix;
                 }, stepTime);
 
                 observer.unobserve(el);
