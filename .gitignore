@@ -2,10 +2,13 @@
 admin.html
 admin/
 
-# Local deployment scripts (Do NOT push to GitHub)
+# Local deployment & server scripts (Do NOT push to GitHub)
 update_portfolio.bat
+start_editor.bat
+server.ps1
 *.bat
 *.cmd
+*.ps1
 
 # OS & Editor temporary files
 .DS_Store

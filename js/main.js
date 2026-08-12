@@ -560,7 +560,29 @@ document.addEventListener('DOMContentLoaded', () => {
     csButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             const id = btn.getAttribute('data-cs');
-            if (caseStudiesData[id] && csModal) {
+            let csItem = null;
+            if (window.portfolioData && window.portfolioData.projects) {
+                csItem = window.portfolioData.projects.find(p => String(p.id) === String(id));
+            }
+            if (csItem && csModal) {
+                csModalTitle.textContent = csItem.title;
+                csModalBody.innerHTML = `
+                    <div class="resume-paper">
+                        <h3>Executive Case Study Overview</h3>
+                        <p>${csItem.solution || ''}</p>
+                        <h4>Problem Statement</h4>
+                        <p>${csItem.problem || ''}</p>
+                        <h4>Key Metrics & Scope</h4>
+                        <p>${csItem.features || ''}</p>
+                        <h4>Business Impact Delivered</h4>
+                        <ul class="exp-bullets">
+                            ${(csItem.impact || []).map(imp => `<li><strong>Impact:</strong> ${imp}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+                csModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            } else if (caseStudiesData[id] && csModal) {
                 csModalTitle.textContent = caseStudiesData[id].title;
                 csModalBody.innerHTML = caseStudiesData[id].content;
                 csModal.classList.add('active');
