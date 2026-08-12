@@ -1,0 +1,14 @@
+# Private Local Admin Editor (Do NOT push to GitHub)
+admin.html
+admin/
+
+# Local deployment scripts (Do NOT push to GitHub)
+update_portfolio.bat
+*.bat
+*.cmd
+
+# OS & Editor temporary files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
