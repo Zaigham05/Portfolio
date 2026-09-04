@@ -4,13 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lucide.createIcons();
     }
 
-    // --- 1. Cursor Glow Follower ---
-    const cursorGlow = document.getElementById('cursor-glow');
-    if (cursorGlow) {
-        document.addEventListener('mousemove', (e) => {
-            cursorGlow.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
-        });
-    }
+    // --- 1. Lucide Icons ---
 
     // --- 2. Mobile Menu Toggle ---
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -489,7 +483,7 @@ document.addEventListener('DOMContentLoaded', () => {
             content: `
                 <div class="resume-paper">
                     <h3>Executive Case Study Overview</h3>
-                    <p>Streamed real-time garment hanger movement sensors into Power BI floor bottleneck alerts.</p>
+                    <p>Streamed real-time garment hanger movement sensors into Power BI floor bottleneck alerts at Combined Fabrics Ltd.</p>
                     <h4>Problem Statement</h4>
                     <p>Paper logbooks failed to catch line balance bottlenecks on active sewing lines until after shifts ended.</p>
                     <h4>Technical Solution</h4>
@@ -499,6 +493,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         <li><strong>100% Shop Floor Traceability:</strong> Real-time garment tracking from cutting to packing.</li>
                         <li><strong>80% Faster Bottleneck Resolution:</strong> Instant floor manager alerts.</li>
                     </ul>
+                    <div style="margin-top: 1.5rem; text-align: center;">
+                        <a href="assets/INA-PPT-CFL.pdf" target="_blank" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 0.7rem 1.4rem;">
+                            <i data-lucide="file-text"></i> Open Full INA Hanger Line Presentation (PDF)
+                        </a>
+                    </div>
                 </div>
             `
         },
