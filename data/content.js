@@ -117,7 +117,7 @@ window.SITE = {
     },
     {
       "title": "Skill-based rates and attendance",
-      "problem": "",
+      "problem": "High rates of operator absenteeism and tardiness are causing significant production losses.",
       "action": "Introduced pay rates by operator skill level and allowances for punctuality.",
       "results": [
         "On-time attendance up 80%"
@@ -126,12 +126,12 @@ window.SITE = {
     },
     {
       "title": "Production reporting at Firhaj Footwear",
-      "problem": "",
+      "problem": "No Standard Format for deplaying & Keeping Reports",
       "action": "Analyzed production reports, found gaps and applied corrective actions alongside Operational Bulletins.",
       "results": [
         "On-target output up 15%"
       ],
-      "tools": ""
+      "tools": "Microsoft Excel"
     }
   ],
   "experience": [
