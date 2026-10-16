@@ -43,7 +43,7 @@ section{padding:5rem 0}section.alt{background:var(--soft)}
 .card dl{font-size:.97rem}.card dt{font-weight:600;color:var(--navy);margin-top:.5rem}.card dd{color:#3d4960}
 .res{margin-top:auto;padding-top:1rem}.res span{display:inline-block;background:var(--sky);color:#12418f;font-weight:600;font-size:.92rem;padding:.3rem .7rem;border-radius:99px;margin:.2rem .3rem 0 0}
 .tools{font-size:.88rem;color:var(--mute);margin-top:.8rem}
-.cases.s{margin-top:1.5rem}.cases.s .card .b{padding:1.2rem}
+.cases.s{margin-top:1.5rem}.card.feat{flex-direction:row;margin-bottom:0}.card.feat img{width:46%;aspect-ratio:auto;object-fit:cover;border-bottom:0;border-right:1px solid var(--line)}.card.feat .b{padding:2rem}.cases.s .card .b{padding:1.2rem}
 .tl{position:relative;margin-left:.6rem;border-left:2px solid var(--line);padding-left:2.2rem}
 .job{position:relative;padding-bottom:2.2rem}.job::before{content:"";position:absolute;left:calc(-2.2rem - 8px);top:.45rem;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--blue)}
 .job.now::before{background:var(--blue)}.job time{font-weight:600;color:var(--blue);font-size:.95rem}
@@ -57,81 +57,60 @@ section{padding:5rem 0}section.alt{background:var(--soft)}
 .contact .btn:not(.ghost){background:#fff;color:var(--navy);border-color:#fff}
 .lines{margin-top:1.6rem;display:grid;gap:.3rem;color:#fff}.lines a{color:#fff}
 footer{padding:1.6rem 0;color:var(--mute);font-size:.92rem;border-top:1px solid var(--line)}
-@media(max-width:900px){.hero .wrap,.two,.edu{grid-template-columns:1fr}.hero{padding-top:2.5rem}.photo{max-width:260px;order:-1;justify-self:start}.band .wrap{grid-template-columns:1fr 1fr}.band .k:nth-child(2){border:0}.band .k{padding:1.4rem 1rem}.band .k:first-child{padding-left:1rem}.cases,.skills{grid-template-columns:1fr}nav a:not(.btn){display:none}section{padding:3.5rem 0}}
+@media(max-width:900px){.card.feat{flex-direction:column}.card.feat img{width:100%;aspect-ratio:16/10;border-right:0;border-bottom:1px solid var(--line)}.hero .wrap,.two,.edu{grid-template-columns:1fr}.hero{padding-top:2.5rem}.photo{max-width:260px;order:-1;justify-self:start}.band .wrap{grid-template-columns:1fr 1fr}.band .k:nth-child(2){border:0}.band .k{padding:1.4rem 1rem}.band .k:first-child{padding-left:1rem}.cases,.skills{grid-template-columns:1fr}nav a:not(.btn){display:none}section{padding:3.5rem 0}}
 @media print{header,.cta{display:none}section{padding:1.5rem 0}.band,.contact{background:#fff;color:#000}.k b{color:#000}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.feats{display:grid;gap:1.5rem;margin-bottom:1.5rem}.card.feat:nth-child(even){flex-direction:row-reverse}.card.feat:nth-child(even) .zoom img{border-right:0;border-left:1px solid var(--line)}
+.zoom{display:block;padding:0;border:0;background:none;cursor:zoom-in;width:100%}.zoom img{display:block;width:100%}
+.card.feat .zoom{width:46%;flex:none}.card.feat .zoom img{height:100%;aspect-ratio:auto;object-fit:cover;border:0;border-right:1px solid var(--line)}
+.photo .zoom{position:relative;z-index:1}.photo .zoom img{box-shadow:0 18px 40px rgba(11,36,71,.18)}
+dialog{border:0;padding:0;background:transparent;max-width:96vw;max-height:94vh}dialog::backdrop{background:rgba(5,15,35,.85)}
+dialog img{max-width:96vw;max-height:90vh;display:block;border-radius:8px;cursor:zoom-out}dialog button{position:absolute;top:-2.4rem;right:0;background:#fff;color:var(--navy);border:0;border-radius:6px;padding:.35rem .8rem;font:600 .95rem 'Source Sans 3',sans-serif;cursor:pointer}
+@media(max-width:900px){.card.feat .zoom{width:100%}.card.feat .zoom img{aspect-ratio:16/10;border-right:0;border-bottom:1px solid var(--line)}}
+@media(max-width:900px){.card.feat:nth-child(even){flex-direction:column}.card.feat:nth-child(even) .zoom img{border-left:0}}
+.card.feat .zoom{width:58%;flex:none;align-self:stretch}
+.card.feat .zoom img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;display:block}
+.card.feat .b{flex:1;align-self:center;padding:2rem 2.2rem}
+@media(max-width:900px){.card.feat .zoom{width:100%}.card.feat .zoom img{aspect-ratio:auto}.card.feat .b{align-self:stretch;padding:1.4rem}}
 </style></head><body>
-<header><div class="wrap"><a class="logo" href="#top">Hafiz Muhammad Zaigham Latif</a>
-<nav aria-label="Main"><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a><a class="btn sm" href="assets/resources/Hafiz_Zaigham_Latif_CV.pdf" download="Hafiz_Zaigham_Latif_CV.pdf">Download CV</a></nav></div></header>
-
-<main id="top">
-<div class="hero"><div class="wrap">
-<div><h1>Hafiz Muhammad Zaigham Latif</h1>
-<p class="role">Industrial Engineering & Data Analytics Professional</p>
-<p class="sum">Senior Officer at Combined Fabrics Limited with 7+ years in textile and apparel manufacturing. I combine shop-floor process optimization, costing and wage structures with Power BI reporting that gives senior management a clear view of KPIs, cost per piece and operational risk.</p>
-<div class="cta"><a class="btn" href="assets/resources/Hafiz_Zaigham_Latif_CV.pdf" download="Hafiz_Zaigham_Latif_CV.pdf">Download CV</a><a class="btn ghost" href="#work">View selected work</a><a class="btn ghost" href="#contact">Contact me</a></div>
-<div class="meta"><span>Lahore, Pakistan</span><a href="mailto:hafizzaigham9@gmail.com">hafizzaigham9@gmail.com</a><a href="https://www.linkedin.com/in/muhammad-zaigham-latif-4540aa17b/" target="_blank" rel="noopener">LinkedIn</a></div></div>
-<div class="photo"><img src="assets/profile.jpg" alt="Portrait of Hafiz Muhammad Zaigham Latif" width="360" height="450"></div>
-</div></div>
-
-<div class="band"><div class="wrap">
-<div class="k"><b>7+</b><span>years in apparel manufacturing, since November 2018</span></div>
-<div class="k"><b>4,200+</b><span>operations covered by validated SAMs and rate lists</span></div>
-<div class="k"><b>40%</b><span>fewer voucher discrepancies after standardization</span></div>
-<div class="k"><b>12 hrs</b><span>of manual reporting saved every week with Power BI</span></div>
-</div></div>
-
-<section id="about"><div class="wrap two">
-<div class="sh" style="max-width:none"><h2>From the shop floor to the boardroom</h2>
-<p style="color:var(--ink)">I started as a Computer Operator on the INA Hanger System and have moved up through Work Study, Officer and Senior Officer roles at Combined Fabrics Limited, with a stint as IE Officer at Firhaj Footwear. That path means I understand how an operation is sewn, paid and costed, and I know what the data on the floor really means.</p>
-<p style="color:var(--ink)">Today I prepare cut-to-pack costing for buyer submissions, validate SAMs, manage rate lists and the wage process, and build the dashboards that management uses to decide.</p></div>
-<div class="comp">
-<div><h3>Industrial engineering</h3><p>Work study, SAM validation, costing, operation breakdown, wage and rate structures, production planning.</p></div>
-<div><h3>Business intelligence</h3><p>Power BI, Power Query, Power Apps, Power Automate, KPI and risk reporting for senior management.</p></div>
-<div><h3>Systems and process</h3><p>ERP integration, RFID tracking, Hanger Line management, continuous improvement.</p></div></div>
-</div></section>
-
-<section id="work" class="alt"><div class="wrap">
-<div class="sh"><h2>Selected work</h2><p>Problems I solved at Combined Fabrics Limited and Firhaj Footwear, and what changed as a result.</p></div>
-<div class="cases">
-<article class="card"><img src="assets/bi_dashboard_preview.jpg" alt="Hanger Line dashboard preview" loading="lazy"><div class="b"><h3>Hanger Line performance dashboard</h3><dl><dt>Problem</dt><dd>Line performance reports were compiled by hand, so managers saw results late.</dd><dt>What I did</dt><dd>Built a web dashboard on ERP and INA Hanger Line data showing real-time performance by line.</dd></dl><div class="res"><span>Adopted across 22 lines</span><span>12 hrs/week saved</span></div><p class="tools">Power BI, Power Query, ERP, RFID</p></div></article>
-<article class="card"><img src="assets/costing_preview.jpg" alt="Costing sheet preview" loading="lazy"><div class="b"><h3>Cut-to-pack costing and CPP</h3><dl><dt>Problem</dt><dd>Buyer pricing needed accurate tentative costs and clear visibility of actual cost per product.</dd><dt>What I did</dt><dd>Prepared actual vs. tentative costing and tracked overtime trends and direct vs. indirect labor ratios.</dd></dl><div class="res"><span>Better pricing decisions</span><span>Tighter budget control</span></div><p class="tools">Excel, Power BI, SAM costing</p></div></article>
-<article class="card"><img src="assets/automation_preview.jpg" alt="Voucher validation preview" loading="lazy"><div class="b"><h3>Rate lists and voucher validation</h3><dl><dt>Problem</dt><dd>Inconsistent operation names, rates and remarks caused voucher discrepancies.</dd><dt>What I did</dt><dd>Standardized names, rates and remarks across 4,200+ operations and validated vouchers against SAM sheets.</dd></dl><div class="res"><span>40% fewer discrepancies</span></div><p class="tools">Excel macros, Power Query, work study</p></div></article>
-</div>
-<div class="cases s">
-<article class="card"><div class="b"><h3>Skill-based rates and attendance</h3><dl><dt>What I did</dt><dd>Introduced pay rates by operator skill level and allowances for punctuality.</dd></dl><div class="res"><span>On-time attendance up 80%</span></div></div></article>
-<article class="card"><div class="b"><h3>New Hanger Line structures</h3><dl><dt>What I did</dt><dd>Implemented and calibrated new line structures as an Officer.</dd></dl><div class="res"><span>Workflow efficiency up 40%</span></div><p class="tools"><a href="assets/INA-PPT-CFL.pdf" target="_blank" rel="noopener">INA Hanger System presentation (PDF)</a></p></div></article>
-<article class="card"><div class="b"><h3>Production reporting at Firhaj Footwear</h3><dl><dt>What I did</dt><dd>Analyzed production reports, found gaps and applied corrective actions alongside Operational Bulletins.</dd></dl><div class="res"><span>On-target output up 15%</span></div></div></article>
-</div></div></section>
-
-<section id="experience"><div class="wrap">
-<div class="sh"><h2>Experience</h2><p>Seven years of steady progression, mostly at Combined Fabrics Limited, Lahore.</p></div>
-<div class="tl">
-<div class="job now"><time>Oct 2023 to present</time><h3>Senior Officer</h3><p class="co">Combined Fabrics Limited</p><ul><li>Prepare cut-to-pack actual vs. tentative costing for buyer submissions and portfolio presentations for new buyers.</li><li>Monitor cost per product, overtime trends and direct vs. indirect labor ratios.</li><li>Validate SAMs and manage rate lists for 4,200+ operations; set rates by skill level.</li><li>Build Power BI dashboards for senior management and lead weekly and monthly risk analysis meetings.</li><li>Oversee the end-to-end wage process and monitor production deficits.</li></ul></div>
-<div class="job"><time>Jul 2022 to Sep 2023</time><h3>Officer</h3><p class="co">Combined Fabrics Limited</p><ul><li>Delivered analytical presentations to senior management.</li><li>Implemented and calibrated new Hanger Line structures, improving workflow efficiency by 40%.</li></ul></div>
-<div class="job"><time>Jun 2021 to Jun 2022</time><h3>Work Study Officer</h3><p class="co">Combined Fabrics Limited</p><ul><li>Created standardized Excel reports and cost analyses for cut-to-pack and services.</li><li>Worked with ERP teams on operational reports; established KPI frameworks.</li></ul></div>
-<div class="job"><time>Nov 2020 to May 2021</time><h3>IE Officer</h3><p class="co">Firhaj Footwear</p><ul><li>Developed Operational Bulletins; analyzed cost per minute and verified SAMs.</li><li>Used production reports to find gaps, improving on-target output by 15%.</li></ul></div>
-<div class="job"><time>Nov 2018 to Oct 2020</time><h3>Computer Operator</h3><p class="co">Combined Fabrics Limited</p><ul><li>Ran INA Hanger System operations and diagnosed line issues to limit downtime.</li><li>Verified barcode scans and processed operator payments accurately.</li></ul></div>
-</div></div></section>
-
-<section id="skills" class="alt"><div class="wrap">
-<div class="sh"><h2>Skills and tools</h2></div>
-<div class="skills">
-<div><h3>Industrial engineering</h3><div class="chips"><span>Work study</span><span>SAM validation</span><span>Costing</span><span>Operation breakdown</span><span>Wage and rate structures</span><span>Production planning</span></div></div>
-<div><h3>Data and BI</h3><div class="chips"><span>Power BI</span><span>Power Query</span><span>Power Apps</span><span>Power Automate</span><span>Power Pages</span><span>Advanced Excel</span></div><p class="learn">Currently learning SQL.</p></div>
-<div><h3>Systems and process</h3><div class="chips"><span>ERP integration</span><span>RFID tracking</span><span>Hanger Line management</span><span>KPI and risk reporting</span><span>Continuous improvement</span></div></div>
-</div></div></section>
-
-<section id="education"><div class="wrap edu">
-<div><h3>Education</h3><ul style="padding:0"><li><b>BS Information Technology (in progress)</b><span>Virtual University of Pakistan, 2025 to 2029</span></li><li><b>Diploma of Associate Engineer, Electrical</b><span>Punjab Board of Technology & Management</span></li><li><b>Matriculation (Science)</b><span>Board of Intermediate & Secondary Education, Lahore</span></li></ul></div>
-<div><h3>Certifications</h3><ul style="padding:0"><li><b>Microsoft Power Platform Developer</b><span>Power BI, Power Apps, Power Automate, Power Pages</span></li><li><b>Advanced Excel Mastery</b><span>Macros and data analysis</span></li><li><b>Zero to Hero in Microsoft Excel</b><span>Also: Adobe Premiere Pro CC and Lightroom</span></li></ul></div>
-</div></section>
-
-<section id="contact" class="contact"><div class="wrap">
-<h2>Let's talk</h2><p>I'm open to roles in industrial engineering, costing and manufacturing analytics. Send a message or download my CV.</p>
-<div class="cta"><a class="btn" href="mailto:hafizzaigham9@gmail.com">Email me</a><a class="btn ghost" href="assets/resources/Hafiz_Zaigham_Latif_CV.pdf" download="Hafiz_Zaigham_Latif_CV.pdf">Download CV</a><a class="btn ghost" href="https://www.linkedin.com/in/muhammad-zaigham-latif-4540aa17b/" target="_blank" rel="noopener">LinkedIn</a></div>
-<div class="lines"><span>hafizzaigham9@gmail.com</span><a href="https://wa.me/923212095794" target="_blank" rel="noopener">WhatsApp: +92 321 2095794</a><span>Lahore, Pakistan</span></div>
-</div></section>
-</main>
-<footer><div class="wrap">© 2026 Hafiz Muhammad Zaigham Latif</div></footer>
+<header><div class="wrap"><a class="logo" href="#top" id="logo"></a>
+<nav aria-label="Main"><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a><a class="btn sm" id="cvTop" href="#">Download CV</a></nav></div></header>
+<main id="top"><div id="app"><noscript><div class="wrap" style="padding:3rem 1.5rem"><p>Please enable JavaScript to view this portfolio. Email: hafizzaigham9@gmail.com</p></div></noscript></div></main>
+<footer><div class="wrap" id="foot"></div></footer>
+<dialog id="lb" aria-label="Enlarged image"><button type="button" id="lbx">Close</button><img alt="" id="lbi"></dialog>
+<script src="data/content.js"></script>
+<script>
+(function(){
+var D=window.SITE,S=D.site;
+var e=function(x){return String(x==null?'':x).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var li=function(a){return a.map(function(x){return '<li>'+e(x)+'</li>'}).join('')};
+var cv=e(S.cv),dl='download="'+cv.split('/').pop()+'"';
+function zoom(src,alt){return '<button type="button" class="zoom" data-src="'+e(src)+'" data-alt="'+e(alt)+'" aria-label="Enlarge image: '+e(alt)+'"><img src="'+e(src)+'" alt="'+e(alt)+'" loading="lazy"></button>'}
+function card(p,feat){
+ var dt=(p.problem?'<dt>Problem</dt><dd>'+e(p.problem)+'</dd>':'')+(p.action?'<dt>What I did</dt><dd>'+e(p.action)+'</dd>':'');
+ var res=(p.results&&p.results.length)?'<div class="res">'+p.results.map(function(r){return '<span>'+e(r)+'</span>'}).join('')+'</div>':'';
+ var tools=p.tools?'<p class="tools">'+e(p.tools)+'</p>':'';
+ var link=(feat&&p.linkUrl)?'<p style="margin-top:1rem"><a class="btn ghost sm" style="color:var(--blue)" href="'+e(p.linkUrl)+'" target="_blank" rel="noopener">'+e(p.linkText||'Open file')+'</a></p>':'';
+ return '<article class="card'+(feat?' feat':'')+'">'+(feat&&p.image?zoom(p.image,p.imageAlt||p.title):'')+'<div class="b"><h3>'+e(p.title)+'</h3><dl>'+dt+'</dl>'+res+tools+link+'</div></article>'}
+var h='';
+h+='<div class="hero"><div class="wrap"><div><h1>'+e(S.name)+'</h1><p class="role">'+e(S.role)+'</p><p class="sum">'+e(S.summary)+'</p>'
+ +'<div class="cta"><a class="btn" href="'+cv+'" '+dl+'>Download CV</a><a class="btn ghost" href="#work">View selected work</a><a class="btn ghost" href="#contact">Contact me</a></div>'
+ +'<div class="meta"><span>'+e(S.location)+'</span><a href="mailto:'+e(S.email)+'">'+e(S.email)+'</a><a href="'+e(S.linkedin)+'" target="_blank" rel="noopener">LinkedIn</a></div></div>'
+ +'<div class="photo">'+zoom(S.photo,'Portrait of '+S.name)+'</div></div></div>';
+h+='<div class="band"><div class="wrap">'+D.stats.map(function(k){return '<div class="k"><b>'+e(k.value)+'</b><span>'+e(k.label)+'</span></div>'}).join('')+'</div></div>';
+h+='<section id="about"><div class="wrap two"><div class="sh" style="max-width:none"><h2>'+e(D.about.heading)+'</h2>'+D.about.paragraphs.map(function(p){return '<p style="color:var(--ink)">'+e(p)+'</p>'}).join('')+'</div><div class="comp">'+D.about.competencies.map(function(c){return '<div><h3>'+e(c.title)+'</h3><p>'+e(c.text)+'</p></div>'}).join('')+'</div></div></section>';
+h+='<section id="work" class="alt"><div class="wrap"><div class="sh"><h2>Selected work</h2><p>'+e(D.workIntro)+'</p></div>'+'<div class="feats">'+D.featured.map(function(p){return card(p,true)}).join('')+'</div>'+'<div class="cases s">'+D.projects.map(function(p){return card(p,false)}).join('')+'</div></div></section>';
+h+='<section id="experience"><div class="wrap"><div class="sh"><h2>Experience</h2></div><div class="tl">'+D.experience.map(function(j){return '<div class="job'+(j.current?' now':'')+'"><time>'+e(j.dates)+'</time><h3>'+e(j.title)+'</h3><p class="co">'+e(j.company)+'</p><ul>'+li(j.bullets)+'</ul></div>'}).join('')+'</div></div></section>';
+h+='<section id="skills" class="alt"><div class="wrap"><div class="sh"><h2>Skills and tools</h2></div><div class="skills">'+D.skills.map(function(g){return '<div><h3>'+e(g.group)+'</h3><div class="chips">'+g.items.map(function(i){return '<span>'+e(i)+'</span>'}).join('')+'</div>'+(g.note?'<p class="learn">'+e(g.note)+'</p>':'')+'</div>'}).join('')+'</div></div></section>';
+var ed=function(a){return a.map(function(x){return '<li><b>'+e(x.title)+'</b><span>'+e(x.detail)+'</span></li>'}).join('')};
+h+='<section id="education"><div class="wrap edu"><div><h3>Education</h3><ul style="padding:0">'+ed(D.education)+'</ul></div><div><h3>Certifications</h3><ul style="padding:0">'+ed(D.certifications)+'</ul></div></div></section>';
+h+='<section id="contact" class="contact"><div class="wrap"><h2>'+e(D.contact.heading)+'</h2><p>'+e(D.contact.text)+'</p><div class="cta"><a class="btn" href="mailto:'+e(S.email)+'">Email me</a><a class="btn ghost" href="'+cv+'" '+dl+'>Download CV</a><a class="btn ghost" href="'+e(S.linkedin)+'" target="_blank" rel="noopener">LinkedIn</a></div><div class="lines"><span>'+e(S.email)+'</span><a href="https://wa.me/'+e(S.whatsapp)+'" target="_blank" rel="noopener">WhatsApp: '+e(S.whatsappDisplay)+'</a><span>'+e(S.location)+'</span></div></div></section>';
+document.getElementById('app').innerHTML=h;
+document.getElementById('logo').textContent=S.name;
+var c=document.getElementById('cvTop');c.href=S.cv;c.setAttribute('download',cv.split('/').pop());
+document.getElementById('foot').textContent='\u00A9 '+new Date().getFullYear()+' '+S.name;
+var lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
+document.addEventListener('click',function(ev){var z=ev.target.closest('.zoom');if(z){lbi.src=z.dataset.src;lbi.alt=z.dataset.alt;(lb.showModal?lb.showModal():lb.setAttribute('open',''))}else if(ev.target===lb||ev.target===lbi||ev.target.id==='lbx'){lb.close()}});
+})();
+</script>
 </body></html>
