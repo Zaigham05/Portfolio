@@ -50,7 +50,7 @@ window.SITE = {
       }
     ]
   },
-  "workIntro": "Two dashboards, plus the costing, rate and wage work behind the numbers: what the problem was and what changed.",
+  "workIntro": "Two dashboards and a line redesign, plus the costing, rate and wage work behind the numbers: what the problem was and what changed.",
   "featured": [
     {
       "title": "Hanger Line performance dashboard",
@@ -79,6 +79,21 @@ window.SITE = {
       "imageAlt": "GMD cost analysis dashboard for FY 2022-23 to 2025-26 with labels removed for privacy",
       "linkText": "",
       "linkUrl": ""
+    },
+    {
+      "title": "Hanger Split Project: new Hanger Line structures",
+      "problem": "Automated hanger lines were installed but not fully used. Most garment articles need fewer operations than the stations installed on a line, so many stations sat idle.",
+      "action": "Proposed a plan to split lines and extract the unused stations, then split 19 lines and built 4 new automated lines from those stations, using the same resources.",
+      "results": [
+        "Utilization up from 63% to 96%",
+        "19 lines split",
+        "4 new automated lines"
+      ],
+      "tools": "Work study, line layout, INA Hanger System",
+      "image": "assets/hanger_split_project.png",
+      "imageAlt": "Hanger Split Project infographic: station utilization raised from 63% to 96%",
+      "linkText": "",
+      "linkUrl": ""
     }
   ],
   "projects": [
@@ -102,19 +117,10 @@ window.SITE = {
     },
     {
       "title": "Skill-based rates and attendance",
-      "problem": "High rates of operator absenteeism and tardiness are causing significant production losses.",
+      "problem": "",
       "action": "Introduced pay rates by operator skill level and allowances for punctuality.",
       "results": [
         "On-time attendance up 80%"
-      ],
-      "tools": ""
-    },
-    {
-      "title": "New Hanger Line structures",
-      "problem": "",
-      "action": "Implemented and calibrated new line structures as an Officer.",
-      "results": [
-        "Workflow efficiency up 40%"
       ],
       "tools": ""
     },
@@ -149,6 +155,7 @@ window.SITE = {
       "current": false,
       "bullets": [
         "Delivered analytical presentations to senior management.",
+        "Split 19 automated hanger lines and built 4 new lines from surplus stations, raising station utilization from 63% to 96% with the same resources.",
         "Implemented and calibrated new Hanger Line structures, improving workflow efficiency by 40%."
       ]
     },
