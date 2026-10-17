@@ -117,7 +117,7 @@ window.SITE = {
     },
     {
       "title": "Skill-based rates and attendance",
-      "problem": "High rates of operator absenteeism and tardiness are causing significant production losses.",
+      "problem": "",
       "action": "Introduced pay rates by operator skill level and allowances for punctuality.",
       "results": [
         "On-time attendance up 80%"
@@ -126,12 +126,12 @@ window.SITE = {
     },
     {
       "title": "Production reporting at Firhaj Footwear",
-      "problem": "No Standard Format for deplaying & Keeping Reports",
+      "problem": "",
       "action": "Analyzed production reports, found gaps and applied corrective actions alongside Operational Bulletins.",
       "results": [
         "On-target output up 15%"
       ],
-      "tools": "Microsoft Excel"
+      "tools": ""
     }
   ],
   "experience": [
@@ -146,6 +146,18 @@ window.SITE = {
         "Validate SAMs and manage rate lists for 4,200+ operations; set rates by skill level.",
         "Built and maintain the Hanger Line Power BI dashboard and the GMD cost analysis dashboard for management; lead weekly and monthly risk analysis meetings.",
         "Oversee the end-to-end wage process and monitor production deficits."
+      ]
+    },
+    {
+      "dates": "2025 to present",
+      "title": "Independent Consultant",
+      "company": "International client",
+      "current": true,
+      "bullets": [
+        "Draft new policies and amend existing ones for an international client.",
+        "Summarize PCS documents into clear briefs that management can act on.",
+        "Build visualizations and decision-making sheets that support management decisions.",
+        "Carry out day-to-day analysis tasks and reporting as the client's needs change."
       ]
     },
     {
@@ -223,6 +235,18 @@ window.SITE = {
         "Hanger Line management",
         "KPI and risk reporting",
         "Continuous improvement"
+      ],
+      "note": ""
+    },
+    {
+      "group": "Policy and decision support",
+      "items": [
+        "Policy drafting",
+        "Policy amendments",
+        "Document summarization",
+        "Decision-making sheets",
+        "Data visualization",
+        "Analysis"
       ],
       "note": ""
     }
