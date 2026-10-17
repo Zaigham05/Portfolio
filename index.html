@@ -28,7 +28,7 @@ nav{display:flex;gap:1.5rem;align-items:center}nav a{color:var(--ink);text-decor
 .photo{position:relative;justify-self:center;max-width:360px}
 .photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;border-radius:10px;position:relative;z-index:1;box-shadow:0 18px 40px rgba(11,36,71,.18)}
 .photo::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--blue);border-radius:10px;opacity:.5}
-.band{background:var(--navy);color:#fff}.band .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.band{background:var(--navy);color:#fff}.band .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
 .band .k{padding:2rem 1.5rem;border-right:1px solid rgba(255,255,255,.14)}.band .k:last-child{border:0}.band .k:first-child{padding-left:0}
 .k b{display:block;font:700 2.6rem/1 'Source Serif 4',serif}.k span{display:block;margin-top:.5rem;color:#b8c8e6;font-size:.98rem;line-height:1.35}
 section{padding:5rem 0}section.alt{background:var(--soft)}
@@ -72,6 +72,7 @@ dialog img{max-width:96vw;max-height:90vh;display:block;border-radius:8px;cursor
 .card.feat .zoom img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;display:block}
 .card.feat .b{flex:1;align-self:center;padding:2rem 2.2rem}
 @media(max-width:900px){.card.feat .zoom{width:100%}.card.feat .zoom img{aspect-ratio:auto}.card.feat .b{align-self:stretch;padding:1.4rem}}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:0 2rem;padding:0}.certs li{list-style:none;padding:.8rem 0;border-top:1px solid var(--line)}.certs li b{display:block;color:var(--navy)}.certs li span{color:var(--mute);font-size:.97rem}
 </style></head><body>
 <header><div class="wrap"><a class="logo" href="#top" id="logo"></a>
 <nav aria-label="Main"><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a><a class="btn sm" id="cvTop" href="#">Download CV</a></nav></div></header>
@@ -103,7 +104,8 @@ h+='<section id="work" class="alt"><div class="wrap"><div class="sh"><h2>Selecte
 h+='<section id="experience"><div class="wrap"><div class="sh"><h2>Experience</h2></div><div class="tl">'+D.experience.map(function(j){return '<div class="job'+(j.current?' now':'')+'"><time>'+e(j.dates)+'</time><h3>'+e(j.title)+'</h3><p class="co">'+e(j.company)+'</p><ul>'+li(j.bullets)+'</ul></div>'}).join('')+'</div></div></section>';
 h+='<section id="skills" class="alt"><div class="wrap"><div class="sh"><h2>Skills and tools</h2></div><div class="skills">'+D.skills.map(function(g){return '<div><h3>'+e(g.group)+'</h3><div class="chips">'+g.items.map(function(i){return '<span>'+e(i)+'</span>'}).join('')+'</div>'+(g.note?'<p class="learn">'+e(g.note)+'</p>':'')+'</div>'}).join('')+'</div></div></section>';
 var ed=function(a){return a.map(function(x){return '<li><b>'+e(x.title)+'</b><span>'+e(x.detail)+'</span></li>'}).join('')};
-h+='<section id="education"><div class="wrap edu"><div><h3>Education</h3><ul style="padding:0">'+ed(D.education)+'</ul></div><div><h3>Certifications</h3><ul style="padding:0">'+ed(D.certifications)+'</ul></div></div></section>';
+var ec=function(a){return a.filter(function(x){return x.title}).map(function(x){return '<li><b>'+e(x.title)+'</b><span>'+e(x.detail)+(x.url?' \u00B7 <a href="'+e(x.url)+'" target="_blank" rel="noopener">Verify</a>':'')+'</span></li>'}).join('')};
+h+='<section id="education"><div class="wrap"><div class="edu"><div><h3>Education</h3><ul style="padding:0">'+ed(D.education)+'</ul></div><div><h3>Training and languages</h3><ul style="padding:0">'+ed(D.training)+'<li><b>Languages</b><span>'+e(S.languages)+'</span></li></ul></div></div><h3 style="margin:2.6rem 0 .8rem;font-size:1.3rem">Certifications</h3><ul class="certs">'+ec(D.certifications)+'</ul></div></section>';
 h+='<section id="contact" class="contact"><div class="wrap"><h2>'+e(D.contact.heading)+'</h2><p>'+e(D.contact.text)+'</p><div class="cta"><a class="btn" href="mailto:'+e(S.email)+'">Email me</a><a class="btn ghost" href="'+cv+'" '+dl+'>Download CV</a><a class="btn ghost" href="'+e(S.linkedin)+'" target="_blank" rel="noopener">LinkedIn</a></div><div class="lines"><span>'+e(S.email)+'</span><a href="https://wa.me/'+e(S.whatsapp)+'" target="_blank" rel="noopener">WhatsApp: '+e(S.whatsappDisplay)+'</a><span>'+e(S.location)+'</span></div></div></section>';
 document.getElementById('app').innerHTML=h;
 document.getElementById('logo').textContent=S.name;

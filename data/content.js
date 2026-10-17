@@ -9,7 +9,8 @@ window.SITE = {
     "whatsapp": "923212095794",
     "whatsappDisplay": "+92 321 2095794",
     "cv": "assets/resources/Hafiz_Zaigham_Latif_CV.pdf",
-    "photo": "assets/profile.jpg"
+    "photo": "assets/profile.jpg",
+    "languages": "Urdu, English, Punjabi"
   },
   "stats": [
     {
@@ -27,6 +28,10 @@ window.SITE = {
     {
       "value": "12 hrs",
       "label": "of manual reporting saved every week with Power BI"
+    },
+    {
+      "value": "~500",
+      "label": "employees trained in Excel, in person, across departments"
     }
   ],
   "about": {
@@ -143,7 +148,7 @@ window.SITE = {
       "bullets": [
         "Prepare cut-to-pack actual vs. tentative costing for buyer submissions and portfolio presentations for new buyers.",
         "Monitor cost per product, overtime trends and direct vs. indirect labor ratios.",
-        "Validate SAMs and manage rate lists for 4,200+ operations; set rates by skill level.",
+        "Lead the Rate Team (for the past year): validate SAMs and manage rate lists for 4,200+ operations; set rates by skill level.",
         "Built and maintain the Hanger Line Power BI dashboard and the GMD cost analysis dashboard for management; lead weekly and monthly risk analysis meetings.",
         "Oversee the end-to-end wage process and monitor production deficits."
       ]
@@ -151,7 +156,7 @@ window.SITE = {
     {
       "dates": "2025 to present",
       "title": "Independent Consultant",
-      "company": "International client",
+      "company": "International client (name withheld)",
       "current": true,
       "bullets": [
         "Draft new policies and amend existing ones for an international client.",
@@ -267,20 +272,79 @@ window.SITE = {
   ],
   "certifications": [
     {
-      "title": "Microsoft Power Platform Developer",
-      "detail": "Power BI, Power Apps, Power Automate, Power Pages"
+      "title": "Introduction to Cybersecurity",
+      "detail": "Cisco",
+      "url": "https://www.credly.com/badges/bd6bb90f-e7e8-4546-b146-d0198301b945/public_url"
     },
     {
-      "title": "Advanced Excel Mastery",
-      "detail": "Macros and data analysis"
+      "title": "Practical Cisco Networking Labs in Cisco Packet Tracer",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-0ddc75a7-4d56-474a-aa31-e99cd1da53b5/"
     },
     {
-      "title": "Zero to Hero in Microsoft Excel",
-      "detail": "Also: Adobe Premiere Pro CC and Lightroom"
+      "title": "Master all the MS Excel Macros and the basics of Excel VBA",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-d799c2ab-7d89-4425-9122-c61415fa3e22/"
+    },
+    {
+      "title": "Introduction to Quantum Computing",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-ae442e46-e3c4-420f-895b-1bf1a1a6aad2/"
+    },
+    {
+      "title": "Excel Tips and Trick: Learn MS Excel by making 7 Projects",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-30f8d992-a994-4d05-8f85-88ce9a08f5ae/"
+    },
+    {
+      "title": "Introduction to Domain Names and Web Hosting - Quick Guide",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-91c5413d-5650-4c00-881c-788b1def6efd/"
+    },
+    {
+      "title": "How to Create a Professional Presentation in PowerPoint",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-a87d4c64-4afe-4c6d-9131-de84d309fe5a/"
+    },
+    {
+      "title": "Complete Adobe Animate Megacourse: Beginner to Expert",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-e5dc66ff-8792-4432-84d2-aa4a4e6a033c/"
+    },
+    {
+      "title": "IP Addressing and Subnetting - Zero to Hero",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-c46c4142-b582-4a6d-8672-a8a437daebf1/"
+    },
+    {
+      "title": "Fundamental Course of Microsoft Power Platform (101 Level)",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-e7bbcc29-23e3-4aac-b337-74408c9f7be2/"
+    },
+    {
+      "title": "Adobe Photoshop CC - Basic Photoshop training",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-558b94cd-b33a-4d84-ba1a-1386b870e0e2/"
+    },
+    {
+      "title": "Adobe Photoshop Photo Editing",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-1a2a2ac1-ff17-48e5-958c-aa20f0641e81/"
+    },
+    {
+      "title": "Adobe Lightroom For Absolute Beginners",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-39759700-4d5a-4917-b1ca-b8ea6ce70806/"
     }
   ],
   "contact": {
     "heading": "Let's talk",
     "text": "I'm open to roles in industrial engineering, costing and manufacturing analytics. Send a message or download my CV."
-  }
+  },
+  "training": [
+    {
+      "title": "Excel training, in person",
+      "detail": "Delivered to nearly 500 employees across departments at Combined Fabrics Limited."
+    }
+  ]
 };
