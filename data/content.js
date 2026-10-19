@@ -23,7 +23,7 @@ window.SITE = {
     },
     {
       "value": "40%",
-      "label": "fewer voucher discrepancies after standardization"
+      "label": "fewer voucher discrepancies versus total volume, since rates became system-filled"
     },
     {
       "value": "12 hrs",
@@ -73,11 +73,12 @@ window.SITE = {
     },
     {
       "title": "GMD cost analysis and CPP dashboard",
-      "problem": "",
-      "action": "Built a four-year (FY 2022-23 to 2025-26) cost analysis dashboard covering strength, productivity, deficits, overtime, air freight and cost per piece with respect to dispatch.",
+      "problem": "Cost data was scattered across different sources, so management could not make decisions quickly.",
+      "action": "Summarized four financial years (FY 2022-23 to 2025-26) of strength, productivity, deficit, overtime, air freight and cost per piece data on a single page, and prepared two management presentations (PPTs).",
       "results": [
         "Four financial years on one page",
-        "Cost per piece tracked against dispatch"
+        "Cost per piece tracked against dispatch",
+        "2 management presentations"
       ],
       "tools": "Excel, SAM costing",
       "image": "assets/cpp_dashboard.jpg",
@@ -113,19 +114,40 @@ window.SITE = {
     },
     {
       "title": "Rate lists and voucher validation",
-      "problem": "Inconsistent operation names, rates and remarks caused voucher discrepancies.",
-      "action": "Standardized names, rates and remarks across 4,200+ operations and validated vouchers against SAM sheets.",
+      "problem": "Rates were entered by hand, so wrong rates were likely, and inconsistent operation names and remarks added to the errors.",
+      "action": "Standardized names, rates and remarks across 4,200+ operations and validated vouchers against SAM sheets. The system now fills in the rate automatically when an operation is selected.",
       "results": [
-        "40% fewer discrepancies"
+        "40% fewer discrepancies versus total volume"
       ],
       "tools": "Excel, work study"
     },
     {
-      "title": "Skill-based rates and attendance",
-      "problem": "",
+      "title": "Rate Team: monthly rate validation",
+      "problem": "Every month 800 to 1,200 unique operations ran across a workforce of 1,200+, and each rate had to be checked to confirm the correct rate was applied.",
+      "action": "Lead a team of 3 that validates these rates every month.",
+      "results": [
+        "Team of 3",
+        "800 to 1,200 operations validated monthly"
+      ],
+      "tools": "Rate lists, SAM sheets"
+    },
+    {
+      "title": "Overtime monitoring and control",
+      "problem": "Overtime in a division of 3,500+ employees needed approval and control, and some staff were working above policy limits.",
+      "action": "Monitor overtime division-wide since 2023: review the reasons, obtain Director approval, hand over to HR and follow up until it is posted in the system, and work with the seniors of anyone above policy to stop it.",
+      "results": [
+        "Division-wide, 3,500+ employees",
+        "Director approval and HR follow-up in place"
+      ],
+      "tools": "Overtime reports, HR handover"
+    },
+    {
+      "title": "Punctuality allowance and skill-based rates",
+      "problem": "Piece-rate operators came to the factory whenever they had work, and arriving late or at their own will was normal.",
       "action": "Introduced pay rates by operator skill level and allowances for punctuality.",
       "results": [
-        "On-time attendance up 80%"
+        "On-time attendance up 80%",
+        "Fewer absences"
       ],
       "tools": ""
     },
@@ -148,7 +170,8 @@ window.SITE = {
       "bullets": [
         "Prepare cut-to-pack actual vs. tentative costing for buyer submissions and portfolio presentations for new buyers.",
         "Monitor cost per product, overtime trends and direct vs. indirect labor ratios.",
-        "Lead the Rate Team (for the past year): validate SAMs and manage rate lists for 4,200+ operations; set rates by skill level.",
+        "Monitor overtime across the whole garment division (3,500+ employees) since 2023: review overtime reasons, obtain Director approval, hand over to HR and follow up until it is posted in the system, and work with the seniors of anyone above policy to stop excess overtime.",
+        "Lead a team of 3 (Rate Team, for the past year), validating rates for 800 to 1,200 unique operations each month; validate SAMs and manage rate lists for 4,200+ operations; set rates by skill level.",
         "Built and maintain the Hanger Line Power BI dashboard and the GMD cost analysis dashboard for management; lead weekly and monthly risk analysis meetings.",
         "Oversee the end-to-end wage process and monitor production deficits."
       ]
@@ -239,7 +262,8 @@ window.SITE = {
         "RFID tracking",
         "Hanger Line management",
         "KPI and risk reporting",
-        "Continuous improvement"
+        "Continuous improvement",
+        "Overtime and policy compliance"
       ],
       "note": ""
     },
