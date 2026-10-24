@@ -2,15 +2,17 @@ window.SITE = {
   "site": {
     "name": "Hafiz Muhammad Zaigham Latif",
     "role": "Industrial Engineering & Data Analytics Professional",
-    "summary": "Senior Officer at Combined Fabrics Limited with 7+ years in textile and apparel manufacturing. I combine shop-floor process optimization, costing and wage structures with Power BI reporting that gives senior management a clear view of KPIs, cost per piece and operational risk.",
+    "summary": "Industrial engineering and data analytics professional with 7+ years in apparel manufacturing. Now leading a rate validation team, after building Power BI dashboards and cost analysis for senior management.",
     "location": "Lahore, Pakistan",
     "email": "hafizzaigham9@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/muhammad-zaigham-latif-4540aa17b/",
+    "linkedin": "https://www.linkedin.com/in/hafiz-muhammad-zaigham-latif/",
     "whatsapp": "923212095794",
     "whatsappDisplay": "+92 321 2095794",
-    "cv": "assets/resources/Hafiz_Zaigham_Latif_CV.pdf",
+    "cv": "assets/resources/Hafiz_Muhammad_Zaigham_Latif_CV.pdf",
     "photo": "assets/profile.jpg",
-    "languages": "Urdu, English, Punjabi"
+    "languages": "Urdu, English, Punjabi",
+    "updated": "October 2026",
+    "openTo": "Open to roles in industrial engineering, costing and manufacturing analytics."
   },
   "stats": [
     {
@@ -72,7 +74,7 @@ window.SITE = {
       "linkUrl": "assets/INA-PPT-CFL.pdf"
     },
     {
-      "title": "GMD cost analysis and CPP dashboard",
+      "title": "GMD cost analysis and cost per piece (CPP) dashboard",
       "problem": "Cost data was scattered across different sources, so management could not make decisions quickly.",
       "action": "Summarized four financial years (FY 2022-23 to 2025-26) of strength, productivity, deficit, overtime, air freight and cost per piece data on a single page, and prepared two management presentations (PPTs).",
       "results": [
@@ -105,7 +107,7 @@ window.SITE = {
   "projects": [
     {
       "title": "Cut-to-pack costing for buyers",
-      "problem": "Buyer pricing needed accurate tentative costs and clear visibility of actual cost per product.",
+      "problem": "Buyer pricing needed accurate tentative costs and clear visibility of actual cost per piece.",
       "action": "Prepared actual vs. tentative costing for buyer submissions.",
       "results": [
         "Better pricing decisions"
@@ -124,7 +126,7 @@ window.SITE = {
     {
       "title": "Rate Team: monthly rate validation",
       "problem": "Every month 800 to 1,200 unique operations ran across a workforce of 1,200+, and each rate had to be checked to confirm the correct rate was applied.",
-      "action": "Lead a team of 3 that validates these rates every month.",
+      "action": "Lead a team of 3 (past year to present) that validates these rates every month.",
       "results": [
         "Team of 3",
         "800 to 1,200 operations validated monthly"
@@ -152,9 +154,9 @@ window.SITE = {
       "tools": ""
     },
     {
-      "title": "Production reporting at Firhaj Footwear",
-      "problem": "",
-      "action": "Analyzed production reports, found gaps and applied corrective actions alongside Operational Bulletins.",
+      "title": "Setting up production reporting at Firhaj Footwear",
+      "problem": "No predefined reporting formats existed, and this type of production reporting was not being done.",
+      "action": "Created production report formats from scratch, then analyzed the reports to find gaps and applied corrective actions alongside Operational Bulletins.",
       "results": [
         "On-target output up 15%"
       ],
@@ -164,16 +166,18 @@ window.SITE = {
   "experience": [
     {
       "dates": "Oct 2023 to present",
-      "title": "Senior Officer",
+      "title": "Senior Officer (Data & Costing, then Rate Team Lead)",
       "company": "Combined Fabrics Limited",
       "current": true,
       "bullets": [
+        "Lead a team of 3 (Rate Team, past year to present) validating rates for 800 to 1,200 unique operations monthly; manage rate lists and SAM validation across 4,200+ operations.",
+        "Standardized operation names, rates and remarks so the system fills the rate when an operation is selected, cutting voucher discrepancies by 40% versus total volume (previously manual entry).",
+        "Monitor overtime across the garment division (3,500+ employees) since 2023: review reasons, obtain Director approval, follow up with HR, and work with seniors to stop overtime above policy.",
+        "Built and maintain the Hanger Line Power BI dashboard for management, cutting manual reporting by 12 hours per week.",
+        "Consolidated scattered cost data into a single-page four-year cost per piece (CPP) analysis dashboard and two management presentations, speeding up decisions.",
         "Prepare cut-to-pack actual vs. tentative costing for buyer submissions and portfolio presentations for new buyers.",
-        "Monitor cost per product, overtime trends and direct vs. indirect labor ratios.",
-        "Monitor overtime across the whole garment division (3,500+ employees) since 2023: review overtime reasons, obtain Director approval, hand over to HR and follow up until it is posted in the system, and work with the seniors of anyone above policy to stop excess overtime.",
-        "Lead a team of 3 (Rate Team, for the past year), validating rates for 800 to 1,200 unique operations each month; validate SAMs and manage rate lists for 4,200+ operations; set rates by skill level.",
-        "Built and maintain the Hanger Line Power BI dashboard and the GMD cost analysis dashboard for management; lead weekly and monthly risk analysis meetings.",
-        "Oversee the end-to-end wage process and monitor production deficits."
+        "Monitor cost per piece (CPP), overtime trends and direct vs. indirect labor ratios to optimize manpower allocation.",
+        "Oversee the wage process and production deficits, and lead weekly and monthly risk analysis meetings."
       ]
     },
     {
@@ -216,7 +220,7 @@ window.SITE = {
       "current": false,
       "bullets": [
         "Developed Operational Bulletins; analyzed cost per minute and verified SAMs.",
-        "Used production reports to find gaps, improving on-target output by 15%."
+        "Created production report formats where none existed, and used the reports to find gaps and apply corrective actions, improving on-target output by 15%."
       ]
     },
     {
@@ -298,67 +302,80 @@ window.SITE = {
     {
       "title": "Introduction to Cybersecurity",
       "detail": "Cisco",
-      "url": "https://www.credly.com/badges/bd6bb90f-e7e8-4546-b146-d0198301b945/public_url"
-    },
-    {
-      "title": "Practical Cisco Networking Labs in Cisco Packet Tracer",
-      "detail": "Udemy",
-      "url": "https://www.udemy.com/certificate/UC-0ddc75a7-4d56-474a-aa31-e99cd1da53b5/"
+      "url": "https://www.credly.com/badges/bd6bb90f-e7e8-4546-b146-d0198301b945/public_url",
+      "more": false
     },
     {
       "title": "Master all the MS Excel Macros and the basics of Excel VBA",
       "detail": "Udemy",
-      "url": "https://www.udemy.com/certificate/UC-d799c2ab-7d89-4425-9122-c61415fa3e22/"
-    },
-    {
-      "title": "Introduction to Quantum Computing",
-      "detail": "Udemy",
-      "url": "https://www.udemy.com/certificate/UC-ae442e46-e3c4-420f-895b-1bf1a1a6aad2/"
+      "url": "https://www.udemy.com/certificate/UC-d799c2ab-7d89-4425-9122-c61415fa3e22/",
+      "more": false
     },
     {
       "title": "Excel Tips and Trick: Learn MS Excel by making 7 Projects",
       "detail": "Udemy",
-      "url": "https://www.udemy.com/certificate/UC-30f8d992-a994-4d05-8f85-88ce9a08f5ae/"
-    },
-    {
-      "title": "Introduction to Domain Names and Web Hosting - Quick Guide",
-      "detail": "Udemy",
-      "url": "https://www.udemy.com/certificate/UC-91c5413d-5650-4c00-881c-788b1def6efd/"
-    },
-    {
-      "title": "How to Create a Professional Presentation in PowerPoint",
-      "detail": "Udemy",
-      "url": "https://www.udemy.com/certificate/UC-a87d4c64-4afe-4c6d-9131-de84d309fe5a/"
-    },
-    {
-      "title": "Complete Adobe Animate Megacourse: Beginner to Expert",
-      "detail": "Udemy",
-      "url": "https://www.udemy.com/certificate/UC-e5dc66ff-8792-4432-84d2-aa4a4e6a033c/"
-    },
-    {
-      "title": "IP Addressing and Subnetting - Zero to Hero",
-      "detail": "Udemy",
-      "url": "https://www.udemy.com/certificate/UC-c46c4142-b582-4a6d-8672-a8a437daebf1/"
+      "url": "https://www.udemy.com/certificate/UC-30f8d992-a994-4d05-8f85-88ce9a08f5ae/",
+      "more": false
     },
     {
       "title": "Fundamental Course of Microsoft Power Platform (101 Level)",
       "detail": "Udemy",
-      "url": "https://www.udemy.com/certificate/UC-e7bbcc29-23e3-4aac-b337-74408c9f7be2/"
+      "url": "https://www.udemy.com/certificate/UC-e7bbcc29-23e3-4aac-b337-74408c9f7be2/",
+      "more": false
+    },
+    {
+      "title": "How to Create a Professional Presentation in PowerPoint",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-a87d4c64-4afe-4c6d-9131-de84d309fe5a/",
+      "more": false
+    },
+    {
+      "title": "Practical Cisco Networking Labs in Cisco Packet Tracer",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-0ddc75a7-4d56-474a-aa31-e99cd1da53b5/",
+      "more": false
+    },
+    {
+      "title": "Introduction to Quantum Computing",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-ae442e46-e3c4-420f-895b-1bf1a1a6aad2/",
+      "more": true
+    },
+    {
+      "title": "Introduction to Domain Names and Web Hosting - Quick Guide",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-91c5413d-5650-4c00-881c-788b1def6efd/",
+      "more": true
+    },
+    {
+      "title": "Complete Adobe Animate Megacourse: Beginner to Expert",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-e5dc66ff-8792-4432-84d2-aa4a4e6a033c/",
+      "more": true
+    },
+    {
+      "title": "IP Addressing and Subnetting - Zero to Hero",
+      "detail": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-c46c4142-b582-4a6d-8672-a8a437daebf1/",
+      "more": true
     },
     {
       "title": "Adobe Photoshop CC - Basic Photoshop training",
       "detail": "Udemy",
-      "url": "https://www.udemy.com/certificate/UC-558b94cd-b33a-4d84-ba1a-1386b870e0e2/"
+      "url": "https://www.udemy.com/certificate/UC-558b94cd-b33a-4d84-ba1a-1386b870e0e2/",
+      "more": true
     },
     {
       "title": "Adobe Photoshop Photo Editing",
       "detail": "Udemy",
-      "url": "https://www.udemy.com/certificate/UC-1a2a2ac1-ff17-48e5-958c-aa20f0641e81/"
+      "url": "https://www.udemy.com/certificate/UC-1a2a2ac1-ff17-48e5-958c-aa20f0641e81/",
+      "more": true
     },
     {
       "title": "Adobe Lightroom For Absolute Beginners",
       "detail": "Udemy",
-      "url": "https://www.udemy.com/certificate/UC-39759700-4d5a-4917-b1ca-b8ea6ce70806/"
+      "url": "https://www.udemy.com/certificate/UC-39759700-4d5a-4917-b1ca-b8ea6ce70806/",
+      "more": true
     }
   ],
   "contact": {
@@ -369,6 +386,10 @@ window.SITE = {
     {
       "title": "Excel training, in person",
       "detail": "Delivered to nearly 500 employees across departments at Combined Fabrics Limited."
+    },
+    {
+      "title": "Hifz-e-Quran",
+      "detail": "Complete memorization of the Quran"
     }
   ]
 };
