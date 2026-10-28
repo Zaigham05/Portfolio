@@ -76,9 +76,12 @@ dialog img{max-width:96vw;max-height:90vh;display:block;border-radius:8px;cursor
 .certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:0 2rem;padding:0}.certs li{list-style:none;padding:.8rem 0;border-top:1px solid var(--line)}.certs li b{display:block;color:var(--navy)}.certs li span{color:var(--mute);font-size:.97rem}
 .open{margin-top:.9rem;font-weight:600;color:var(--navy)}details.more summary{cursor:pointer;color:var(--blue);font-weight:600;margin-top:1rem}details.more .certs{margin-top:.6rem}
 .ic{width:1.1em;height:1.1em;flex:none;vertical-align:-.18em}.btn .ic{margin-right:.5em;vertical-align:-.2em}.meta span,.meta a{display:inline-flex;align-items:center;gap:.45rem}.lines span,.lines a{display:flex;align-items:center;gap:.6rem}.lines .ic{width:1.2em;height:1.2em}
+.menu{display:none;background:#fff;border:1px solid var(--line);border-radius:6px;padding:.4rem .5rem;color:var(--navy);cursor:pointer}.menu svg{width:24px;height:24px;display:block}
+@media(max-width:900px){header .wrap{position:relative}.logo{font-size:1rem}.menu{display:block}header nav{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 14px 24px rgba(11,36,71,.14);flex-direction:column;align-items:stretch;gap:0;padding:.4rem 1.5rem 1.1rem}header.open nav{display:flex}header nav a:not(.btn){display:block;padding:.85rem 0;border-bottom:1px solid var(--line);font-size:1.05rem}header nav .btn{margin-top:1rem;text-align:center;padding:.7rem 1rem}}
+@media print{.menu{display:none}}
 </style></head><body>
 <header><div class="wrap"><a class="logo" href="#top" id="logo"></a>
-<nav aria-label="Main"><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a><a class="btn sm" id="cvTop" href="#">Download CV</a></nav></div></header>
+<button type="button" class="menu" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><nav id="nav" aria-label="Main"><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a><a class="btn sm" id="cvTop" href="#">Download CV</a></nav></div></header>
 <main id="top"><div id="app"><noscript><div class="wrap" style="padding:3rem 1.5rem"><p>Please enable JavaScript to view this portfolio. Email: hafizzaigham9@gmail.com</p></div></noscript></div></main>
 <footer><div class="wrap" id="foot"></div></footer>
 <dialog id="lb" aria-label="Enlarged image"><button type="button" id="lbx">Close</button><img alt="" id="lbi"></dialog>
@@ -120,5 +123,12 @@ document.getElementById('foot').textContent='\u00A9 '+new Date().getFullYear()+'
 var lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
 document.addEventListener('click',function(ev){var z=ev.target.closest('.zoom');if(z){lbi.src=z.dataset.src;lbi.alt=z.dataset.alt;(lb.showModal?lb.showModal():lb.setAttribute('open',''))}else if(ev.target===lb||ev.target===lbi||ev.target.id==='lbx'){lb.close()}});
 })();
+</script>
+<script>
+(function(){var h=document.querySelector('header'),b=document.getElementById('menuBtn');function close(){h.classList.remove('open');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Open menu')}
+b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Close menu':'Open menu')});
+Array.prototype.forEach.call(document.querySelectorAll('#nav a'),function(a){a.addEventListener('click',close)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+window.addEventListener('resize',function(){if(window.innerWidth>900)close()})})();
 </script>
 </body></html>
