@@ -102,6 +102,20 @@ window.SITE = {
       "imageAlt": "Hanger Split Project infographic: station utilization raised from 63% to 96%",
       "linkText": "",
       "linkUrl": ""
+    },
+    {
+      "title": "Wages voucher flow: from paper to paperless",
+      "problem": "Wages vouchers moved on paper through many approvals before the Rate Team entered them in the system, and rates were typed by hand, so wrong rates were likely.",
+      "action": "Designed a paperless flow: the Sewing IE enters the voucher in the system, the Rate Team approves or rejects it up front, and only a summary needs signatures. Standardized names, rates and remarks across 4,200+ operations so the system fills the rate when an operation is selected.",
+      "results": [
+        "40% fewer discrepancies versus total volume",
+        "Rate Team checks vouchers up front"
+      ],
+      "tools": "Excel, work study",
+      "image": "assets/voucher_flow.jpg",
+      "imageAlt": "Existing paper voucher flow compared with the suggested paperless voucher flow",
+      "linkText": "",
+      "linkUrl": ""
     }
   ],
   "projects": [
@@ -113,15 +127,6 @@ window.SITE = {
         "Better pricing decisions"
       ],
       "tools": "Excel, SAM costing"
-    },
-    {
-      "title": "Rate lists and voucher validation",
-      "problem": "Rates were entered by hand, so wrong rates were likely, and inconsistent operation names and remarks added to the errors.",
-      "action": "Standardized names, rates and remarks across 4,200+ operations and validated vouchers against SAM sheets. The system now fills in the rate automatically when an operation is selected.",
-      "results": [
-        "40% fewer discrepancies versus total volume"
-      ],
-      "tools": "Excel, work study"
     },
     {
       "title": "Rate Team: monthly rate validation",
@@ -171,7 +176,7 @@ window.SITE = {
       "current": true,
       "bullets": [
         "Lead a team of 3 (Rate Team, past year to present) validating rates for 800 to 1,200 unique operations monthly; manage rate lists and SAM validation across 4,200+ operations.",
-        "Standardized operation names, rates and remarks so the system fills the rate when an operation is selected, cutting voucher discrepancies by 40% versus total volume (previously manual entry).",
+        "Designed a paperless wages voucher flow and standardized operation names and rates so the system auto-fills the rate, cutting voucher discrepancies by 40% versus total volume (previously manual entry).",
         "Monitor overtime across the garment division (3,500+ employees) since 2023: review reasons, obtain Director approval, follow up with HR, and work with seniors to stop overtime above policy.",
         "Built and maintain the Hanger Line Power BI dashboard for management, cutting manual reporting by 12 hours per week.",
         "Consolidated scattered cost data into a single-page four-year cost per piece (CPP) analysis dashboard and two management presentations, speeding up decisions.",
